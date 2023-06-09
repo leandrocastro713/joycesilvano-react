@@ -47,6 +47,12 @@
   justify-content: right;
   text-align: right;
   top: 3px;
+  transition: 500ms all ease;
+  letter-spacing: 1px;
+}
+.header-title h4:hover {
+  transition: 500ms all ease;
+  letter-spacing: 2.6px;
 }
 .social {
   align-items: center;
@@ -60,11 +66,14 @@
 }
 .social img {
   height: 38px;
+  opacity:.7;
   padding-left: 4px;
 }
-.cabecalho .social img:hover {
+.social img:hover {
   transition: all 500ms;
-  transform: scale(1.2);
+  opacity:1;
+  transform: scale(1.15);
+  
 }
 .social a {
   position: relative;
