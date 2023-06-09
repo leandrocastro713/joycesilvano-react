@@ -1,0 +1,88 @@
+.top-bar {
+  height: 6rem;
+  background-image: url("../imagens/bkg1-original.png");
+  background-blend-mode: screen;
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: rgb(245, 198, 235);
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: -12px;
+  text-align: center;
+}
+.header {
+  border: 1px green dotted;
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  color: rgb(28, 21, 27);
+}
+.header-title {
+  border: 1px gray dotted;
+  display: block;
+  position: relative;
+  float: left;
+  width: 360px;
+  height: 60px;
+}
+.header-title h1 {
+  position: relative;
+  top: 15px;
+  left: 1rem;
+  font-family: "Great Vibes", cursive;
+  /* font-family: "Montserrat", sans-serif; */
+  font-size: 54px;
+  text-align: left;
+}
+.header-title h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  display: block;
+  position: relative;
+  justify-content: right;
+  text-align: right;
+  top: 0px;
+}
+.social {
+  align-items: center;
+  display: flex;
+  border: 1px red dotted;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 146px;
+  top: 0px;
+}
+.social img {
+  height: 38px;
+  padding-left: 4px;
+}
+.cabecalho .social img:hover {
+  transition: all 500ms;
+  transform: scale(1.2);
+}
+.social a {
+  position: relative;
+  padding: 0;
+  top: 5px;
+}
+@media (max-width: 500px) {
+  .header {
+    width: 100%;
+  }
+  .social img {
+    width: 30px;
+    height: 28px;
+  }
+  .header-title h1 {
+    font-size: 44px;
+    top:20px;
+  }
+  .header-title h4 {
+    top: 9px;
+  }
+}
