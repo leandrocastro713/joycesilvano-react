@@ -1,18 +1,20 @@
-#barra-de-menu {  
+#barra-de-menu {
   background-image: url("../imagens/bkg2.png");
-  background-blend-mode: multiply;
+  background-blend-mode: luminosity;
   background-clip: padding-box;
-  background-color: rgb(237, 176, 225);
+  background-color: rgb(228, 187, 220);
   margin-top: 10px;
-  display: block;
+  display: inline-block;
+  justify-content: space-around;
   border-radius: 10px 40px;
-  box-shadow: 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
   padding: 10px;
   text-align: center;
-  color: rgb(77, 28, 5);;
+  color: rgb(77, 28, 5);
 }
 #barra-de-menu ul {
   display: inline-block;
+  position:relative;
   margin: 0;
   align-items: center;
   justify-content: center;
@@ -25,8 +27,8 @@
   display: inline-block;
   text-decoration: none;
 }
-#barra-de-menu a{
-  color:rgb(55, 53, 15);
+#barra-de-menu a {
+  color: rgb(55, 53, 15);
   font-family: "ubuntu", sans-serif;
   font-weight: 400;
   border: 1px solid none;
@@ -34,23 +36,64 @@
   padding: 4px 10px;
   text-decoration: none;
 }
-#barra-de-menu a:hover{
+#barra-de-menu a:hover {
   padding: 4px 20px;
-  background-color: rgba(235, 156, 231,.4);
+  background-color: rgba(233, 177, 229, 0.4);
   border-radius: 5px;
-  border: 1px solid rgb(237, 208, 236);
+  border: 1px solid rgb(189, 122, 186);
   color: rgb(42, 42, 42);
   border-radius: 6px;
 }
-.atual{
+.atual {
   font-family: fonteH4;
   cursor: none;
   background-color: none;
   color: rgb(62, 61, 61);
 }
-.atual:hover{
+.atual:hover {
   background-color: none;
 }
-ul#menu{
-  margin:0; padding: 0;
+ul#menu {
+  margin: 0;
+  padding: 0;
+  transition: 300ms ease all;
+}
+.btn-hamburguer-container {
+  display:inline-block;
+  cursor: pointer;
+  visibility: collapse;
+}
+@media (max-width: 500px) {
+  .btn-hamburguer-container{
+    visibility:visible;
+    font-weight: 900;
+    font-size: 30px;
+
+  }
+  .btn-hamburguer-container p{
+    position:relative;
+    top:2px;
+    left:-4px;
+  }
+  #menu{
+    position:relative;
+    display:inline-block;
+    visibility: collapse;
+    cursor: pointer;
+    width:0;
+  }
+  #menu:hover{
+    transition: 300ms ease all;
+    transform: scale(1.1);
+  }
+  #barra-de-menu{
+    position:fixed;
+    display:flex;
+    width:60px;
+    height:60px;
+    border-radius: 50px;
+    border: 2px rgb(197, 157, 164) solid;
+    right:15px;
+    bottom: 15px;
+  }
 }
