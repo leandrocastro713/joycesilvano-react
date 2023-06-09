@@ -12,7 +12,7 @@
   text-align: center;
 }
 .header {
-  border: 1px green dotted;
+  /* border: 1px green dotted; */
   width: 600px;
   height: 100%;
   margin: 0 auto;
@@ -22,7 +22,7 @@
   color: rgb(28, 21, 27);
 }
 .header-title {
-  border: 1px gray dotted;
+  /* border: 1px gray dotted; */
   display: block;
   position: relative;
   float: left;
@@ -31,11 +31,12 @@
 }
 .header-title h1 {
   position: relative;
-  top: 15px;
+  top: 20px;
   left: 1rem;
   font-family: "Great Vibes", cursive;
   /* font-family: "Montserrat", sans-serif; */
   font-size: 54px;
+  font-weight: 100;
   text-align: left;
 }
 .header-title h4 {
@@ -45,12 +46,12 @@
   position: relative;
   justify-content: right;
   text-align: right;
-  top: 0px;
+  top: 3px;
 }
 .social {
   align-items: center;
   display: flex;
-  border: 1px red dotted;
+  /* border: 1px red dotted; */
   justify-content: center;
   align-items: center;
   position: relative;
@@ -80,9 +81,9 @@
   }
   .header-title h1 {
     font-size: 44px;
-    top:20px;
+    top:26px;
   }
   .header-title h4 {
-    top: 9px;
+    top: 12px;
   }
 }
