@@ -1,8 +1,39 @@
+import { useState, useEffect } from "react";
 import "./Menu.css";
+
 export default function Menu() {
+  const [menuShow, setMenuShow ] = useState (true)
+  const [isMobile, setIsMobile] = useState (false)
+  
+  // useEffect(() => {
+  //   console.log(menuShow)
+  //   console.log(window.screen.width)
+  // });
+
+  setInterval(()=>{
+    if(window.screen.width<501){
+      setIsMobile(true)
+    } else {
+      setIsMobile(false)
+    }
+    console.log('set interval '+ window.screen.width + ', menuShow: ' + 
+              menuShow + ' , isMobile: ' + isMobile)
+  },1000)
+
+  function btnClick(){
+    setMenuShow(!menuShow)
+      if(window.screen.width>500){
+        setIsMobile(false)
+      }else{setIsMobile(true)}
+  }
+
+
   return (
-    <nav id="barra-de-menu">
-      <ul id="menu" type="none">
+    <div style={!isMobile || menuShow?{visibility:'visible'}
+          :{visibility:'collapse'}} type ='none'id="barra-de-menu">
+      <div style={!isMobile || menuShow?{visibility:'visible'}
+            :{visibility:'collapse'}} id='menu' type ='none'>
+       {/* <div id="menu" type="none"> */}
         <li>
           <a onClick="inicio-container-show" href="#">
             Início
@@ -33,10 +64,14 @@ export default function Menu() {
             Contato
           </a>
         </li>
-      </ul>
-      <div className="btn-hamburguer-container">
-        <p>+</p>
       </div>
-    </nav>
+
+      <div className="btn-hamburguer-container">
+        <p id="bt-plus" onClick={()=>btnClick()}>
+          {menuShow?'  -  ':'  +  '}
+        </p>
+      </div>
+
+    </div>
   );
 }
