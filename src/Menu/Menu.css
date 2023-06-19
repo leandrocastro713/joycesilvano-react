@@ -83,18 +83,21 @@
   100%{opacity:10%};
 }
 
-@media (max-width: 500px) {
+@media (max-width: 690px) {
   .btn-hamburguer-container{
     visibility:visible;
     font-weight: 900;
     font-size: 30px;
     align-items: center;
+    background-color: rgba(238, 170, 234, 0.8);
     border: 1px rgb(225, 191, 219) solid;
     border-radius: 50px;
     padding:10px;
     z-index: 1001;
     color:black;
     height: 50px;
+    top:20px;
+    position:relative;
     box-shadow: 3px 3px rgba(128, 128, 128, 0.782);
     /* transition: all ease 300ms; */
   }
