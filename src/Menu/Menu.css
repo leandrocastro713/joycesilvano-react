@@ -74,7 +74,7 @@
 }
 @keyframes show-out {
   0%{opacity:100%};
-  100%{opacity:0%};
+  100%{opacity:10%};
 }
 
 @media (max-width: 500px) {
@@ -133,7 +133,7 @@
   #barra-de-menu{
     position:fixed;
     background-image: none;
-    background-color: rgba(255, 177, 252, 0.59);
+    background-color: rgba(255, 177, 252, 0.398);
     display:flex;
     justify-content: space-between;
     align-items: flex-end;

@@ -31,11 +31,13 @@ export default function Menu() {
   return (
     <div style={!isMobile || menuShow?{visibility:'visible', 
       animation: 'ease show-in 1000ms forwards'}
-      :{animation:'ease show-out 300ms forwards'}} 
+      :{animation:'ease show-out 1000ms forwards', 
+      animationDuration:'1000ms'}} 
       type ='none' id="barra-de-menu">
       <div style={!isMobile || menuShow?{visibility:'visible', 
         animation: 'ease show-in 1000ms forwards'}
-        :{animation: 'ease show-out 300ms forwards'}} 
+        :{animation: 'ease show-out 1000ms forwards', 
+        animationDuration:'1000ms'}} 
         id='menu' type ='none'>
        {/* <div id="menu" type="none"> */}
         <li>
