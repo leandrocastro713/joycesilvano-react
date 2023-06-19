@@ -101,7 +101,8 @@
     visibility: collapse;
     cursor: pointer;
     width:100%;
-    height: calc(100vh - 150px);
+    height: 200px;
+    bottom: 60px;
     transition: all ease 300ms;
   }
   #menu li{
@@ -111,6 +112,8 @@
     justify-content: right;
     position: relative;
     align-items: center;
+    letter-spacing: 1.4px;
+    font-weight: 400;
     transition: all ease 300ms;
   }
   #menu:hover{
@@ -128,7 +131,7 @@
     bottom: 15px;
     visibility: collapse;
     width:90%;
-    height: calc(100vh - 110px);
+    height: 300px;
     padding:6px;
     transition: all ease 300ms;
   }

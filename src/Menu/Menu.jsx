@@ -5,10 +5,10 @@ export default function Menu() {
   const [menuShow, setMenuShow ] = useState (true)
   const [isMobile, setIsMobile] = useState (false)
   
-  // useEffect(() => {
-  //   console.log(menuShow)
-  //   console.log(window.screen.width)
-  // });
+  useEffect(() => {
+    console.log('useefect')
+    console.log(window.screen.width)
+  });
 
   setInterval(()=>{
     if(window.screen.width<501){
@@ -16,8 +16,8 @@ export default function Menu() {
     } else {
       setIsMobile(false)
     }
-    console.log('set interval '+ window.screen.width + ', menuShow: ' + 
-              menuShow + ' , isMobile: ' + isMobile)
+    // console.log('set interval '+ window.screen.width + ', menuShow: ' + 
+              // menuShow + ' , isMobile: ' + isMobile)
   },1000)
 
   function btnClick(){
