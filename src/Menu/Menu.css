@@ -68,6 +68,11 @@
   visibility: collapse;
   /* transition: all ease 300ms; */
 }
+.btn-hamburguer-container p {
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 1.6rem;
+}
 
 @keyframes show-in {
   0%{opacity:0%};
@@ -123,7 +128,7 @@
     display: flex;
     justify-content: left;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     align-items: center;
     letter-spacing: 1.6px;
     font-weight: 900;
@@ -136,7 +141,7 @@
   #barra-de-menu{
     position:fixed;
     background-image: none;
-    background-color: rgba(238, 188, 235, 0.9);;
+    background-color: rgba(237, 207, 235, 0.9);;
     display:flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -147,7 +152,7 @@
     visibility: collapse;
     width:200px;
     height: 300px;
-    padding:6px;
+    padding:6px 6px 19px 6px;
     /* transition: all ease 300ms; */
   }
 }
