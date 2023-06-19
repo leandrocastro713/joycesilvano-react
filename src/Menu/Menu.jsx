@@ -33,13 +33,12 @@ export default function Menu() {
       animation: 'ease show-in 1000ms forwards'}
       :{animation:'ease show-out 1000ms forwards', 
       animationDuration:'1000ms'}} 
-      type ='none' id="barra-de-menu">
+      id="barra-de-menu" type ='none' >
       <div style={!isMobile || menuShow?{visibility:'visible', 
         animation: 'ease show-in 1000ms forwards'}
         :{animation: 'ease show-out 1000ms forwards', 
         animationDuration:'1000ms'}} 
         id='menu' type ='none'>
-       {/* <div id="menu" type="none"> */}
         <li>
           <a onClick="inicio-container-show" href="#">
             Início
@@ -56,17 +55,17 @@ export default function Menu() {
           </a>
         </li>
         <li>
-          <a onClick="dicas-container-show" href="">
+          <a onClick="dicas-container-show" href="#">
             Dicas
           </a>
         </li>
         <li>
-          <a onClick="galeria-container-show" href="">
+          <a onClick="galeria-container-show" href="#">
             Galeria
           </a>
         </li>
         <li>
-          <a onClick="contato-container-show" href="">
+          <a onClick="contato-container-show" href="#">
             Contato
           </a>
         </li>

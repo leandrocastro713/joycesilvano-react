@@ -2,7 +2,7 @@
   background-image: url("../imagens/bkg2.png") ;
   background-blend-mode: luminosity;
   background-clip: padding-box;
-  background-color: rgb(228, 187, 220);
+  background-color: rgb(237, 155, 220);
   margin-top: 10px;
   display: inline-block;
   justify-content: space-around;
@@ -10,7 +10,8 @@
   box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
   padding: 10px 30px;
   text-align: center;
-  color: rgb(77, 28, 5);
+  color: rgb(212, 168, 211);
+  z-index: 1000;
   /* transition: all ease 300ms; */
 }
 #barra-de-menu ul {
@@ -39,7 +40,7 @@
 }
 #barra-de-menu a:hover {
   padding: 4px 20px;
-  background-color: rgba(233, 177, 229, 0.4);
+  background-color: rgb(189, 122, 186);
   border-radius: 5px;
   border: 1px solid rgb(189, 122, 186);
   color: rgb(42, 42, 42);
@@ -86,7 +87,8 @@
     border: 1px rgb(225, 191, 219) solid;
     border-radius: 50px;
     padding:10px;
-    z-index: 10;
+    z-index: 1001;
+    color:black;
     height: 50px;
     box-shadow: 3px 3px rgba(128, 128, 128, 0.782);
     /* transition: all ease 300ms; */
@@ -99,6 +101,7 @@
     padding: 5px;
     left:0px;
     height: 100%;
+    z-index: 1001;
     /* transition: all ease 300ms; */
   }
   #menu{
@@ -133,7 +136,7 @@
   #barra-de-menu{
     position:fixed;
     background-image: none;
-    background-color: rgba(255, 177, 252, 0.398);
+    background-color: rgba(238, 188, 235, 0.9);;
     display:flex;
     justify-content: space-between;
     align-items: flex-end;
