@@ -68,6 +68,14 @@
   /* transition: all ease 300ms; */
 }
 
+@keyframes show-in {
+  0%{opacity:0%};
+  100%{opacity:100%};
+}
+@keyframes show-out {
+  0%{opacity:100%};
+  100%{opacity:0%};
+}
 
 @media (max-width: 500px) {
   .btn-hamburguer-container{
@@ -104,7 +112,7 @@
     height: 200px;
     /* right:100vw; */
     bottom: 60px;
-    transition: all ease 300ms;
+    /* transition: all ease 300ms; */
   }
   #menu li{
     width:100%;
@@ -125,7 +133,7 @@
   #barra-de-menu{
     position:fixed;
     background-image: none;
-    background-color: unset;
+    background-color: rgba(255, 177, 252, 0.59);
     display:flex;
     justify-content: space-between;
     align-items: flex-end;

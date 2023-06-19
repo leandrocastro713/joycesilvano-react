@@ -29,10 +29,14 @@ export default function Menu() {
 
 
   return (
-    <div style={!isMobile || menuShow?{visibility:'visible'}
-          :{visibility:'collapse'}} type ='none'id="barra-de-menu">
-      <div style={!isMobile || menuShow?{visibility:'visible'}
-            :{visibility:'collapse'}} id='menu' type ='none'>
+    <div style={!isMobile || menuShow?{visibility:'visible', 
+      animation: 'ease show-in 1000ms forwards'}
+      :{animation:'ease show-out 300ms forwards'}} 
+      type ='none' id="barra-de-menu">
+      <div style={!isMobile || menuShow?{visibility:'visible', 
+        animation: 'ease show-in 1000ms forwards'}
+        :{animation: 'ease show-out 300ms forwards'}} 
+        id='menu' type ='none'>
        {/* <div id="menu" type="none"> */}
         <li>
           <a onClick="inicio-container-show" href="#">
