@@ -1,14 +1,10 @@
 import { useState, useEffect } from "react";
 import "./Menu.css";
 
-export default function Menu() {
+export default function Menu ({childToParent}) {
   const [menuShow, setMenuShow ] = useState (true)
   const [isMobile, setIsMobile] = useState (false)
-  
-  useEffect(() => {
-    console.log('useefect')
-    console.log(window.screen.width)
-  });
+  const [dataChild, setDataChild] = useState()
 
   setInterval(()=>{
     if(window.screen.width<501){
@@ -16,8 +12,6 @@ export default function Menu() {
     } else {
       setIsMobile(false)
     }
-    // console.log('set interval '+ window.screen.width + ', menuShow: ' + 
-              // menuShow + ' , isMobile: ' + isMobile)
   },1000)
 
   function btnClick(){
@@ -26,7 +20,6 @@ export default function Menu() {
         setIsMobile(false)
       }else{setIsMobile(true)}
   }
-
 
   return (
     <div style={!isMobile || menuShow?{visibility:'visible', 
@@ -40,17 +33,17 @@ export default function Menu() {
         animationDuration:'1000ms'}} 
         id='menu' type ='none'>
         <li>
-          <a onClick="inicio-container-show" href="#">
+          <a onClick={()=>childToParent('inicio')} href="#">
             Início
           </a>
         </li>
         <li>
-          <a onClick="saude-container-show" href="#">
+          <a onClick={()=>childToParent('saude')} href="#">
             Saúde
           </a>
         </li>
         <li>
-          <a onClick="produtos-container-show" href="#">
+          <a onClick='' href="#">
             Produtos
           </a>
         </li>

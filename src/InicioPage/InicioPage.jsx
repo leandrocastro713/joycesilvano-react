@@ -57,7 +57,7 @@ export default function InicioPage() {
           <div className="artigo">
 
             <h2>Você sabe a curvatura do seu cabelo?</h2>
-            <p className="textos">
+            <p className="textos textoEsquerda inicio-texto">
               Confira na tabela abaixo, a curvatura do fio do seu cabelo.
             </p>
             <div className="subartigo">
@@ -100,7 +100,7 @@ export default function InicioPage() {
 
           <div className="artigo">
             <h2>Produto em destaque</h2>
-            <p className="textos">
+            <p className="inicio-textos">
               Confira os produtos em destaque desta semana.
             </p>
             <div className="subartigo2">

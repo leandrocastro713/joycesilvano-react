@@ -83,7 +83,7 @@ hr {
 .artigo p {
   font-weight: bold;
   text-align: left;
-  padding: 1rem 0 1rem;
+  padding: 1rem 0 0;
 }
 .artigo h2 {
   font-weight: bolder;
@@ -129,16 +129,19 @@ hr {
 }
 .textoEsquerda {
   justify-content: left;
-  text-align: left;
+  text-align: left !important;
   font-weight: 500;
   line-height: 1.2rem;
+  padding-bottom: .5rem;
 }
 .imagem2 {
   height: 400px;
   border-radius: 8px;
-  margin: .5rem;
+  margin: 1.5rem;
 }
-
+.inicio-texto{
+  text-align: left;
+}
 /*---------------------- MEDIA QUERY --------------------*/
 @media (max-width: 840px) {
   .corpo {
