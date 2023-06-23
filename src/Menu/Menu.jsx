@@ -22,6 +22,15 @@ export default function Menu ({childToParent}) {
       }else{setIsMobile(true)}
   }
 
+  function opSelect(op){
+    console.log(op)
+    if(op == 'inicio'){childToParent('inicio')
+      btnClick()}
+    if(op == 'saude'){childToParent('saude')
+      btnClick()}
+    
+  }
+
   return (
     <div style={!isMobile || menuShow?{visibility:'visible', 
       animation: 'ease show-in 1000ms forwards'}
@@ -34,12 +43,12 @@ export default function Menu ({childToParent}) {
         animationDuration:'1000ms'}} 
         id='menu' type ='none'>
         <li>
-          <a onClick={()=>childToParent('inicio')} href="#">
+          <a onClick={()=>opSelect('inicio')} href="#">
             Início
           </a>
         </li>
         <li>
-          <a onClick={()=>childToParent('saude')} href="#">
+          <a onClick={()=>opSelect('saude')} href="#">
             Saúde
           </a>
         </li>
