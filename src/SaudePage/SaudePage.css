@@ -119,6 +119,7 @@ p{
   font-weight: 900;
   font-size: larger;
   text-align: center;
+  margin: 1rem auto .8rem;
 }
 #separador{
   font-size: 60px;
@@ -248,6 +249,9 @@ summary{
   .parte2{
       margin:0 auto;
   }
+  .wp-footer p{
+    width:fit-content
+  }
 }
 @media (max-width: 550px){
   .bloquinho{
@@ -281,6 +285,9 @@ summary{
       margin: 0 auto;
       padding: 10px 0px 0px;
       font-weight: normal;
+  }
+  .direita p{
+    text-align: left;
   }
   .esquerda{ margin-top: 10px;  }
   .imagem{
@@ -358,9 +365,10 @@ summary{
       float: none;
       width: 100%;
   } 
-  video{
+  .video{
       width: 96%;
       height: auto;
+      margin: 1rem 0 1rem;
   }
   body{
       margin:0 auto;
@@ -386,7 +394,7 @@ summary{
       width: 100%;
   }
   .bloquinho p{
-      text-align: justify;
+      text-align: left;
       width: 95%;
       margin: 0 auto;
   }

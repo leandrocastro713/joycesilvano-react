@@ -14,6 +14,7 @@ export default function Menu ({childToParent}) {
     }
   },1000)
 
+ 
   function btnClick(){
     setMenuShow(!menuShow)
       if(window.screen.width>500){

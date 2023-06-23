@@ -102,19 +102,19 @@ export default function SaudePage(){
 
             <div className="bloquinho">
                 <div className="esquerda">
-                    <strong><u>Ozonioterapia:</u></strong><br/> <br/>
-                    <video className = 'centralizado' controls src={require("../imagens/saude-ozonio.mp4")}></video>
+                    <strong><u>Ozonioterapia:</u></strong><br/>
+                    <video className = 'centralizado video' controls src={require("../imagens/saude-ozonio.mp4")}></video>
                     <p> 
-    b                    Técnica de tratamento realizado com água e ozônio em forma de vapor. Esse penetra nos fios deixando- os mais hidratados,  macios e encorpados.
-                        No coura cabeludo o vapor estimula a circulação sanguínea recuperando e tratando a saúde capilar.
-                        Indicado para todos os tipos de curvatura (cabelo).
+                      Técnica de tratamento realizado com água e ozônio em forma de vapor. Esse penetra nos fios deixando- os mais hidratados,  macios e encorpados.
+                      No coura cabeludo o vapor estimula a circulação sanguínea recuperando e tratando a saúde capilar.
+                      Indicado para todos os tipos de curvatura (cabelo).
                     </p>
                 </div>
                 <div className="direita">
                     <p>
                         <b><u>Benefícios:</u></b>
                     </p>
-                    <p> 
+                    <p> <br />
                         Combate a calvície e a queda de cabelo
                         <br/>
                         Combate a caspa e outras 
@@ -123,7 +123,7 @@ export default function SaudePage(){
                         Alinha as cutículas <br/>
                         Rejuvenesce os fios <br/>
                         Estimula o crescimento <br/>
-                        Diminui o frizz <br/>
+                        Diminui o frizz <br/> <br />
                     </p> 
                 </div>
             </div>
@@ -142,8 +142,8 @@ export default function SaudePage(){
                     </p> 
                 </div>
                 <div className="direita">
-                    <p><b><u>Benefícios:</u></b><br/></p>
-                    <p> 
+                    <p><b><u>Benefícios:</u></b></p>
+                    <p> <br />
                         Todo cabelo vai precisar
                         de reconstrução em algum momento. 
                         O que vária é a necessidade e frequência. 
@@ -157,12 +157,14 @@ export default function SaudePage(){
                         não fazer. Então cuidado
                         com o tempo de intervalo
                         entre um tratamento e outro.
+                        
                     </p>
+                    <br />
                 </div>
             </div>
 
 {/* <!------------------------ DERMATITES  ----------------------------> */}
-
+                          <br />
             <p className="separador" id="derma">Dermatites</p>
 
             <div id="dois" className="dermatites">
