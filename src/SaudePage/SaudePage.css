@@ -65,7 +65,7 @@ p{
   display: block;
   position: relative;
   float: right;
-  padding: 0;
+  padding: 10px;
   margin: 0 auto;
 }
 .parte2 p{
@@ -326,7 +326,7 @@ summary{
   }
   .image-hidro{  display:block;  }
   .parte2 p{
-      padding: 10px 0px 2px;
+      padding: 10px;
       position:relative;
       text-align: left;
   }

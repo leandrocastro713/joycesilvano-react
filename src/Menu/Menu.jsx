@@ -33,13 +33,13 @@ export default function Menu ({childToParent}) {
 
   return (
     <div style={!isMobile || menuShow?{visibility:'visible', 
-      animation: 'ease show-in 1000ms forwards'}
-      :{animation:'ease show-out 1000ms forwards', 
+      animation: 'ease show-in 500ms forwards'}
+      :{animation:'ease show-out 500ms forwards', 
       animationDuration:'1000ms'}} 
       id="barra-de-menu" type ='none' >
       <div style={!isMobile || menuShow?{visibility:'visible', 
-        animation: 'ease show-in 1000ms forwards'}
-        :{animation: 'ease show-out 1000ms forwards', 
+        animation: 'ease show-in 500ms forwards'}
+        :{animation: 'ease show-out 500ms forwards', 
         animationDuration:'1000ms'}} 
         id='menu' type ='none'>
         <li>
