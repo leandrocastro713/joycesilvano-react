@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import InicioPage from './InicioPage/InicioPage'
 import Rodape from './Rodape/Rodape'
 import SaudePage from './SaudePage/SaudePage'
+import ProdutosPage from './ProdutosPage/ProdutosPage'
 
 export default function App() {
   
@@ -32,6 +33,7 @@ export default function App() {
     hidePages()
     if(atualPage == 'inicio'){setShowInicioPage(true)}
     if(atualPage == 'saude'){setShowSaudePage(true)}
+    if(atualPage == 'produtos'){setShowProdutosPage(true)}
   }
 
   return (
@@ -41,6 +43,7 @@ export default function App() {
       <Menu childToParent={childToParent}/>
       {showInicioPage && <InicioPage />}
       {showSaudePage && <SaudePage />}
+      {showProdutosPage && <ProdutosPage />}
       <Rodape />
     </div>
   

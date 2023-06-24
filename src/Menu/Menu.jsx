@@ -7,7 +7,7 @@ export default function Menu ({childToParent}) {
   const [dataChild, setDataChild] = useState()
 
   setInterval(()=>{
-    if(window.screen.width<501){
+    if(window.screen.width<550){
       setIsMobile(true)
     } else {
       setIsMobile(false)
@@ -17,7 +17,7 @@ export default function Menu ({childToParent}) {
  
   function btnClick(){
     setMenuShow(!menuShow)
-      if(window.screen.width>500){
+      if(window.screen.width>550){
         setIsMobile(false)
       }else{setIsMobile(true)}
   }
@@ -27,6 +27,8 @@ export default function Menu ({childToParent}) {
     if(op == 'inicio'){childToParent('inicio')
       btnClick()}
     if(op == 'saude'){childToParent('saude')
+      btnClick()}
+    if(op == 'produtos'){childToParent('produtos')
       btnClick()}
     
   }
@@ -53,7 +55,7 @@ export default function Menu ({childToParent}) {
           </a>
         </li>
         <li>
-          <a onClick='' href="#">
+          <a onClick={()=>opSelect('produtos')} href="#">
             Produtos
           </a>
         </li>
