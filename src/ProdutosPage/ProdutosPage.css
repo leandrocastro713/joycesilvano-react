@@ -260,6 +260,7 @@ a {
     margin-right: 8px;
   }
 }
+
 @media (max-width: 320px) {
   .titulo {
     height: 3rem;
