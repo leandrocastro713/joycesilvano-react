@@ -250,7 +250,7 @@ export default function SaudePage(){
                         Os fungos causadores da pitiríase compõem a microbiota do couro cabeludo e são ativados devido a mudanças no pH da região, à sudorese em excesso e até mesmo ao estresse, entre outras razões.
                     </p>  <br/>
                 </div> 
-                <a className="topo" href="#um">topo</a>
+                <a className="topo" href="#um">TOPO</a>
             </div>
         </div>
     {/* </div> */}

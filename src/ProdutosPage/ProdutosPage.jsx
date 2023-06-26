@@ -59,7 +59,7 @@ function filtro_todos(){
       {/* // <!------------------------------------ PARTE 1--> */}
 
       <div className="grid">
-        <aside className="choose">
+        <aside className="choose" id='choose'>
           <div id="apse" className="marca">
             <a>
               <img src={require("../imagens/apse.png")} onClick={()=>setFiltro("apse")} />
@@ -68,7 +68,7 @@ function filtro_todos(){
 
           <div id="arvensis" className="marca">
             <a>
-              <img src={require("../imagens/arvensis.png")} onClick={()=>setFiltro("arvensis")} />
+              <img src={require("../imagens/arvensis.png")} onClick={()=>setFiltro("arvensis")} /> 
             </a>
           </div>
 
@@ -116,13 +116,13 @@ function filtro_todos(){
           {/* <!--------------------------------- apse  --> */}
 
           <div className="produto apse">
-            <a href="../produtos/apse03.jpg" target="_blank">
+            <a href={require("../produtos/apse03.jpg")} target="_blank">
               <img src={require("../produtos/apse03.jpg")} />
             </a>
             <div className="textoProduto">
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Apse%20Cachos%20Shampoo"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Apse%20Cachos%20Shampoo"
                   target="_blank"
                 >
                   Cachos Shampoo
@@ -130,7 +130,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Apse%20Cachos%20Condicionador"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Apse%20Cachos%20Condicionador"
                   target="_blank"
                 >
                   Cachos Condicionador
@@ -140,13 +140,13 @@ function filtro_todos(){
           </div>
 
           <div className="produto apse">
-            <a href="../produtos/apse05.jpg" target="_blank">
+            <a href={require("../produtos/apse05.jpg")} target="_blank">
               <img src={require("../produtos/apse05.jpg")} />
             </a>
             <div className="textoProduto">
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Apse%20Mousse%20Cachos"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Apse%20Mousse%20Cachos"
                   target="_blank"
                 >
                   Mousse Cachos
@@ -154,7 +154,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Apse%20Mousse%20Crespo%20Power"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Apse%20Mousse%20Crespo%20Power"
                   target="_blank"
                 >
                   Mousse Crespo Power
@@ -167,14 +167,14 @@ function filtro_todos(){
 
           <div className="produto arvensis">
             
-            <a href="../produtos/arvensis01.jpg" target="_blank">
+            <a href={require("../produtos/arvensis01.jpg")} target="_blank">
               <img src={require("../produtos/arvensis01.jpg")} />
             </a>
 
             <div className="textoProduto">
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Tec%20Oil%20Shampoo"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Tec%20Oil%20Shampoo"
                   target="_blank"
                 >
                   Tec Oil Shampoo
@@ -182,7 +182,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Condicionador"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Condicionador"
                   target="_blank"
                 >
                   Condicionador
@@ -190,7 +190,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Máscara"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Máscara"
                   target="_blank"
                 >
                   Máscara
@@ -198,7 +198,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Óleo%20Tec%20Oil"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Óleo%20Tec%20Oil"
                   target="_blank"
                 >
                   Óleo Tec Oil
@@ -208,14 +208,14 @@ function filtro_todos(){
           </div>
 
           <div className="produto arvensis">
-            <a href="./produtos/arvensis02.jpg" target="_blank">
+            <a href={require("../produtos/arvensis02.jpg")} target="_blank">
               <img src={require("../produtos/arvensis02.jpg")} />
             </a>
 
             <div className="textoProduto">
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Geleia%20ativadora%20Suave%20fixação%20250g"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Geleia%20ativadora%20Suave%20fixação%20250g"
                   target="_blank"
                 >
                   Geleia ativadora Suave fixação 250g
@@ -223,7 +223,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Geleia%20ativadora%20Alta%20fixação%20450g"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Geleia%20ativadora%20Alta%20fixação%20450g"
                   target="_blank"
                 >
                   Geleia ativadora Alta fixação 450g
@@ -233,13 +233,13 @@ function filtro_todos(){
           </div>
 
           <div className="produto arvensis">
-            <a href="./produtos/arvensis03.jpg" target="_blank">
+            <a href={require("../produtos/arvensis03.jpg")} target="_blank">
               <img src={require("../produtos/arvensis03.jpg")} />
             </a>
             <div className="textoProduto">
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Reconstrução%20Shampoo"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Reconstrução%20Shampoo"
                   target="_blank"
                 >
                   Reconstrução Shampoo
@@ -247,7 +247,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Reconstrução%20Condicionador"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Reconstrução%20Condicionador"
                   target="_blank"
                 >
                   Condicionador
@@ -255,7 +255,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Reconstrução%20Máscara"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Reconstrução%20Máscara"
                   target="_blank"
                 >
                   Máscara
@@ -263,7 +263,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Reconstrução%20Desamareladora"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Reconstrução%20Desamareladora"
                   target="_blank"
                 >
                   Desamareladora
@@ -273,13 +273,13 @@ function filtro_todos(){
           </div>
 
           <div className="produto arvensis">
-            <a href="../produtos/arvensis05.jpg" target="_blank">
+            <a href={("../produtos/arvensis05.jpg")} target="_blank">
               <img src={require("../produtos/arvensis05.jpg")} />
             </a>
             <div className="textoProduto">
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Shampoo"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Shampoo"
                   target="_blank"
                 >
                   Shampoo
@@ -287,7 +287,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Condicionador"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Condicionador"
                   target="_blank"
                 >
                   Condicionador
@@ -295,7 +295,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Máscara"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Arvensis%20Máscara"
                   target="_blank"
                 >
                   Máscara
@@ -304,48 +304,16 @@ function filtro_todos(){
             </div>
           </div>
 
-          <div className="produto arvensis">
-            <a href="../produtos/arvensis06.jpg" target="_blank">
-              <img src={(require = "../produtos/arvensis06.jpg")} />
-            </a>
-            <div className="textoProduto">
-              <p className="descricao">
-                <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Sangue%20de%20%20Dragão%20Shampoo"
-                  target="_blank"
-                >
-                  Sangue de <br />
-                  Dragão Shampoo
-                </a>
-              </p>
-              <p className="descricao">
-                <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Sangue%20de%20Dragão%20Condicionador"
-                  target="_blank"
-                >
-                  Condicionador
-                </a>
-              </p>
-              <p className="descricao">
-                <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Arvensis%20Sangue%20de%20Dragão%20Máscara"
-                  target="_blank"
-                >
-                  Máscara
-                </a>
-              </p>
-            </div>
-          </div>
-
+          
           {/* <!-------------------------------- MAGIC BEAUTY --> */}
 
           <div className="produto magic">
-            <a href="../produtos/magic01.jpg" target="_blank">
+            <a href={require("../produtos/magic01.jpg")} target="_blank">
               <img src={require("../produtos/magic01.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Creme%20para%20pentear%20e%20ativador%20de%20cachos"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Creme%20para%20pentear%20e%20ativador%20de%20cachos"
                     target="_blank"
                   >
                     Creme para pentear e ativador de cachos
@@ -356,12 +324,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto magic">
-            <a href="../produtos/magic02.jpg" target="_blank">
+            <a href={require("../produtos/magic02.jpg")} target="_blank">
               <img src={require("../produtos/magic02.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Umidificador%20de%20cachos"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Umidificador%20de%20cachos"
                     target="_blank"
                   >
                     Umidificador de cachos
@@ -372,12 +340,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto magic">
-            <a href="../produtos/magic03.jpg" target="_blank">
+            <a href={require("../produtos/magic03.jpg")} target="_blank">
               <img src={require("../produtos/magic03.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Água%20de%20aloe"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Água%20de%20aloe"
                     target="_blank"
                   >
                     Água de aloe
@@ -388,12 +356,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto magic">
-            <a href="../produtos/magic04.jpg" target="_blank">
+            <a href={require("../produtos/magic04.jpg")} target="_blank">
               <img src={require("../produtos/magic04.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Gelatina%20modeladora"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Gelatina%20modeladora"
                     target="_blank"
                   >
                     Gelatina modeladora
@@ -404,12 +372,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto magic">
-            <a href="../produtos/magic05.jpg" target="_blank">
+            <a href={require("../produtos/magic05.jpg")} target="_blank">
               <img src={require("../produtos/magic05.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Shampoo"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Shampoo"
                     target="_blank"
                   >
                     Shampoo
@@ -420,12 +388,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto magic">
-            <a href="../produtos/magic06.jpg" target="_blank">
+            <a href={require("../produtos/magic06.jpg")} target="_blank">
               <img src={require("../produtos/magic06.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Condicionador"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Magic%20Beauty%20-%20Condicionador"
                     target="_blank"
                   >
                     Condicionador
@@ -438,12 +406,12 @@ function filtro_todos(){
           {/* <!------------------------------------ widicare  --> */}
 
           <div className="produto widicare">
-            <a href="../produtos/widi01.jpg" target="_blank">
+            <a href={require("../produtos/widi01.jpg")} target="_blank">
               <img src={require("../produtos/widi01.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Co%20Wash"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Co%20Wash"
                     target="_blank"
                   >
                     Co Wash
@@ -451,7 +419,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Shampoo"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Shampoo"
                     target="_blank"
                   >
                     Shampoo
@@ -459,7 +427,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Condicionador"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Condicionador"
                     target="_blank"
                   >
                     Condicionador
@@ -467,7 +435,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Máscara"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Máscara"
                     target="_blank"
                   >
                     Máscara
@@ -478,12 +446,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto widicare">
-            <a href="../produtos/widi02.jpg" target="_blank">
+            <a href={require("../produtos/widi02.jpg")} target="_blank">
               <img src={require("../produtos/widi02.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Máscara%20de%20Hidratação"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Máscara%20de%20Hidratação"
                     target="_blank"
                   >
                     Máscaras <br />
@@ -492,7 +460,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Máscara%20de%20Nutrição"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Máscara%20de%20Nutrição"
                     target="_blank"
                   >
                     Nutrição
@@ -500,7 +468,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Máscara%20de%20Reconstrução"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Máscara%20de%20Reconstrução"
                     target="_blank"
                   >
                     Reconstrução
@@ -511,12 +479,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto widicare">
-            <a href="../produtos/widi03.jpg" target="_blank">
+            <a href={require("../produtos/widi03.jpg")} target="_blank">
               <img src={require("../produtos/widi03.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Modelador%20de%20Ondas"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Modelador%20de%20Ondas"
                     target="_blank"
                   >
                     Modelador de Ondas
@@ -524,7 +492,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Modelador%20de%20Cachos"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Modelador%20de%20Cachos"
                     target="_blank"
                   >
                     Modelador de Cachos
@@ -532,7 +500,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Modelador%20de%20Crespos"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Modelador%20de%20Crespos"
                     target="_blank"
                   >
                     Modelador de Crespos
@@ -543,12 +511,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto widicare">
-            <a href="../produtos/widi04.jpg" target="_blank">
+            <a href={require("../produtos/widi04.jpg")} target="_blank">
               <img src={require("../produtos/widi04.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Phyto%20Manga%20Shampoo%20Reparador"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Phyto%20Manga%20Shampoo%20Reparador"
                     target="_blank"
                   >
                     Phyto Manga <br />
@@ -557,7 +525,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Phyto%20Manga%20Condicionador%20Reparador"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Phyto%20Manga%20Condicionador%20Reparador"
                     target="_blank"
                   >
                     Condicionador Reparador
@@ -565,7 +533,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Phyto%20Manga%20Finalizador"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Phyto%20Manga%20Finalizador"
                     target="_blank"
                   >
                     Finalizador
@@ -573,7 +541,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Phyto%20Manga%20Máscara"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Phyto%20Manga%20Máscara"
                     target="_blank"
                   >
                     Máscara
@@ -584,12 +552,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto widicare">
-            <a href="./produtos/widi05.jpg" target="_blank">
+            <a href={require("../produtos/widi05.jpg")} target="_blank">
               <img src={require("../produtos/widi05.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Sete%20Óleos%20Máscara%20Nutritiva"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Sete%20Óleos%20Máscara%20Nutritiva"
                     target="_blank"
                   >
                     Sete Óleos Máscara Nutritiva
@@ -600,12 +568,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto widicare">
-            <a href="../produtos/widi06.jpg" target="_blank">
+            <a href={require("../produtos/widi06.jpg")} target="_blank">
               <img src={require("../produtos/widi06.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Mousse"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Mousse"
                     target="_blank"
                   >
                     Mousse
@@ -613,7 +581,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Geléia"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Geléia"
                     target="_blank"
                   >
                     Geléia
@@ -621,7 +589,7 @@ function filtro_todos(){
                 </p>
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Widi%20Care%20Revitalizador"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Widi%20Care%20Revitalizador"
                     target="_blank"
                   >
                     Revitalizador
@@ -634,13 +602,13 @@ function filtro_todos(){
           {/* <!--------------------------------------- auri --> */}
 
           <div className="produto auri">
-            <a href="../produtos/auri01.jpg" target="_blank">
+            <a href={require("../produtos/auri01.jpg")} target="_blank">
               <img src={require("../produtos/auri01.jpg")} />
             </a>
             <div className="textoProduto">
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Auri%20Xampu"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Auri%20Xampu"
                   target="_blank"
                 >
                   Xampu
@@ -648,7 +616,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Auri%20Xampu%20Creme"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Auri%20Xampu%20Creme"
                   target="_blank"
                 >
                   Xampu Creme
@@ -656,7 +624,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Auri%20Amaciador"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Auri%20Amaciador"
                   target="_blank"
                 >
                   Amaciador
@@ -666,13 +634,13 @@ function filtro_todos(){
           </div>
 
           <div className="produto auri">
-            <a href="../produtos/auri02.jpg" target="_blank">
+            <a href={require("../produtos/auri02.jpg")} target="_blank">
               <img src={require("../produtos/auri02.jpg")} />
             </a>
             <div className="textoProduto">
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Auri%20Gel"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Auri%20Gel"
                   target="_blank"
                 >
                   Gel
@@ -680,7 +648,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Auri%20Gel%20Creme"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Auri%20Gel%20Creme"
                   target="_blank"
                 >
                   Gel Creme
@@ -690,13 +658,13 @@ function filtro_todos(){
           </div>
 
           <div className="produto auri">
-            <a href="../produtos/auri03.jpg" target="_blank">
+            <a href={require("../produtos/auri03.jpg")} target="_blank">
               <img src={require("../produtos/auri03.jpg")} />
             </a>
             <div className="textoProduto">
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Auri%20Finalizador%20Leve"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Auri%20Finalizador%20Leve"
                   target="_blank"
                 >
                   Finalizador Leve
@@ -704,7 +672,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Auri%20Finalizador%20Denso"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Auri%20Finalizador%20Denso"
                   target="_blank"
                 >
                   Finalizador Denso
@@ -714,13 +682,13 @@ function filtro_todos(){
           </div>
 
           <div className="produto auri">
-            <a href="../produtos/auri04.jpg" target="_blank">
+            <a href={require("../produtos/auri04.jpg")} target="_blank">
               <img src={require("../produtos/auri04.jpg")} />
             </a>
             <div className="textoProduto">
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Auri%20Acidificante"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Auri%20Acidificante"
                   target="_blank"
                 >
                   Acidificante
@@ -728,7 +696,7 @@ function filtro_todos(){
               </p>
               <p className="descricao">
                 <a
-                  href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Auri%20Máscara%20HNR"
+                  href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Auri%20Máscara%20HNR"
                   target="_blank"
                 >
                   Máscara HNR
@@ -740,12 +708,12 @@ function filtro_todos(){
           {/* <!------------------------------------ acessorios --> */}
 
           <div className="produto acessorios">
-            <a href="../produtos/acessorios02.jpg" target="_blank">
+            <a href={require("../produtos/acessorios02.jpg")} target="_blank">
               <img src={require("../produtos/acessorios02.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Acessórios%20Espátula"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Acessórios%20Espátula"
                     target="_blank"
                   >
                     Espátula
@@ -756,12 +724,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto acessorios">
-            <a href="../produtos/acessorios03.jpg" target="_blank">
+            <a href={require("../produtos/acessorios03.jpg")} target="_blank">
               <img src={require("../produtos/acessorios03.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Acessórios%20Difusor"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Acessórios%20Difusor"
                     target="_blank"
                   >
                     Difusor
@@ -772,12 +740,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto acessorios">
-            <a href="../produtos/acessorios04.jpg" target="_blank">
+            <a href={require("../produtos/acessorios04.jpg")} target="_blank">
               <img src={require("../produtos/acessorios04.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Acessórios%20Touca%20difusora"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Acessórios%20Touca%20difusora"
                     target="_blank"
                   >
                     Touca difusora
@@ -788,12 +756,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto acessorios">
-            <a href="../produtos/acessorios06.jpg" target="_blank">
+            <a href={require("../produtos/acessorios06.jpg")} target="_blank">
               <img src={require("../produtos/acessorios06.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Acessórios%20Xuxinha"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Acessórios%20Xuxinha"
                     target="_blank"
                   >
                     Xuxinha
@@ -804,12 +772,12 @@ function filtro_todos(){
           </div>
 
           <div className="produto acessorios">
-            <a href="../produtos/acessorios10.jpg" target="_blank">
+            <a href={require("../produtos/acessorios10.jpg")} target="_blank">
               <img src={require("../produtos/acessorios10.jpg")} />
               <div className="textoProduto">
                 <p className="descricao">
                   <a
-                    href="http://wa.me/5551998497549?text=Tenho%20interesse%20no%20produto%20Acessórios%20Borrifador"
+                    href="http://wa.me/5551998497549?text=Site:%20Tenho%20interesse%20no%20produto%20Acessórios%20Borrifador"
                     target="_blank"
                   >
                     Borrifador
@@ -821,8 +789,8 @@ function filtro_todos(){
         </div>
       </div>
 
-      <a id="topo" href="#barra-de-menu">
-        Topo
+      <a id="topo" href="#choose">
+        <p>Topo</p>
       </a>
     </>
   );

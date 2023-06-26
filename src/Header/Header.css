@@ -96,3 +96,18 @@
     top: 12px;
   }
 }
+@media (max-width: 321px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  .header-title h1{
+    font-size: 2.3rem;
+  }
+  .header-title h4{
+    top:18px;
+    left: -20px;
+  }
+  .social{
+    left: -10px
+  }
+}

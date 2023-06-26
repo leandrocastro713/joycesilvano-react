@@ -4,7 +4,7 @@ export default function InicioPage() {
   return (
     <>
       <h2 id="hoje">Hoje</h2>
-      <div className="corpo">
+      <div className="corpo-inicio">
         <section className="coluna-esquerda">
           <div className="tempo1" id="cont_2a0ca20bd00cf475dfec3c63c18724a3">
             <script
@@ -78,7 +78,7 @@ export default function InicioPage() {
 
           <div className="artigo">
 
-            <h2>Corte e Penteado da Semana</h2>
+            <h2>Corte e Penteado da Semana</h2> <br />
             <div className="subartigo2">
               <a href={require("../galeria/foto202.jpeg")} target="_blank">
                 <img
@@ -102,7 +102,7 @@ export default function InicioPage() {
             <h2>Produto em destaque</h2>
             <p className="inicio-textos">
               Confira os produtos em destaque desta semana.
-            </p>
+            </p><br />
             <div className="subartigo2">
               <a href={require("../produtos/acessorios06.jpg")} target="_blank">
                 <img
@@ -128,7 +128,7 @@ export default function InicioPage() {
             <h2>
               A higienização é o primeiro passo para tudo dar certo no cuidado
               da saúde capilar
-            </h2>
+            </h2><br />
             <p className="textoEsquerda">
               Primeiro, molhe bem o couro cabeludo,
             </p>
@@ -142,6 +142,7 @@ export default function InicioPage() {
             <p className="textoEsquerda">
               Você percebeu que a higienização é somente no couro cabeludo!
             </p>
+            <br />
             <img
               className="imagem2"
               src={require("../imagens/higienização.jpeg")}
@@ -162,7 +163,7 @@ export default function InicioPage() {
         </section>
       </div>
 
-      {/* --------------- corpo --------------------*/}
+      {/* --------------- corpo-inicio --------------------*/}
     </>
   );
 }

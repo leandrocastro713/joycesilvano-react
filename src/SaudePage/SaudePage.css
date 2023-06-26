@@ -437,12 +437,10 @@ summary{
       margin: 0 auto;
       width: 100%;
   }
-  .texto{
+  .container .texto{
       margin: 0 auto;
       width: 100%;
-  }
-  .container{
-      width: 100%;
+      padding:0;
   }
   .main{
       width: 100%;
@@ -451,13 +449,13 @@ summary{
       margin-bottom: 1rem;
       margin-top: 0rem;
   }
-  .texto{
-      width: 100%;
-  }
   .centralizado{
       width: 100%;
   }
   .st{
       margin-bottom: 8px;
+  }
+  .separador {
+    font-size: 2.4rem;
   }
 }

@@ -82,3 +82,13 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 321px) {
+  .rodape{
+    padding: 15px 0 55px;
+  }
+  .left-footer {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
