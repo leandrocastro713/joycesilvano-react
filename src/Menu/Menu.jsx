@@ -28,7 +28,9 @@ export default function Menu ({childToParent}) {
       btnClick()}
     if(op == 'saude'){childToParent('saude')
       btnClick()}
-    if(op == 'produtos'){childToParent('produtos')
+      if(op == 'produtos'){childToParent('produtos')
+      btnClick()}
+    if(op == 'dicas'){childToParent('dicas')
       btnClick()}
     
   }
@@ -60,7 +62,7 @@ export default function Menu ({childToParent}) {
           </a>
         </li>
         <li>
-          <a onClick="dicas-container-show" href="#">
+          <a onClick={()=>opSelect('dicas')} href="#">
             Dicas
           </a>
         </li>

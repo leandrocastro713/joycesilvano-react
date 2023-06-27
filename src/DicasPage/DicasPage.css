@@ -1,0 +1,50 @@
+.dica {
+  display: block;
+  max-width: 500px;
+  /* font-family: ""; */
+  margin-bottom: 1rem;
+}
+.dica h2 {
+  font-weight: bolder;
+  font-size: x-large;
+  margin-bottom: 1rem;
+  color: rgb(19, 40, 21);
+}
+.dica p {
+  position: relative;
+  margin: 0 auto;
+  line-height: 1.2;
+  text-align: left;
+  font-weight: 600;
+  font-size: large;
+  width: 95%;
+  margin-bottom: 1rem;
+  color: rgb(9, 23, 10);
+}
+main {
+  margin: 2rem auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+}
+#zoiudo {
+  width: 100%;
+  transform: scale(1);
+  justify-content: center;
+  align-items: center;
+}
+#zoiudo:hover {
+  cursor: pointer;
+  transition: all 500ms;
+  transform: scale(2);
+}
+.voltar {
+  transition: 1500ms;
+  transform: scale(1);
+}
+@media (max-width: 500px) {
+  .dica {
+    max-width: 400px;
+  }
+}
