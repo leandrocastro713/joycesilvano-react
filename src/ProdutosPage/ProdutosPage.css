@@ -191,6 +191,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 98%;
+    margin-top: 10px;
   }
   .choose {
     display: flex;
@@ -198,6 +199,9 @@ a {
     flex-wrap: wrap;
     padding-top: 10px;
     width: 98%;
+  }
+  .marca{
+    padding: .5rem;
   }
   .container {
     width: 98%;
@@ -227,6 +231,9 @@ a {
     width: 98%;
     max-height: none;
     max-width: none;
+  }
+  .produto a{
+    text-align: left;
   }
   .textoProduto {
     padding-left: 0px;

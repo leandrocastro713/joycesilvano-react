@@ -3,40 +3,31 @@ import "./ProdutosPage.css";
 
 export default function ProdutosPage() {
 
-  const [filtro, setFiltro] = useState()
+  const [filtro, setFiltro] = useState('')
 
-  let divProduto = document.querySelectorAll('.produto');
-  let qtdDivs = divProduto.length-1;
-  let vMarcas = document.querySelectorAll('.marca');
-  let qtdMarcas = vMarcas.length-1;
+  var divProduto = document.querySelectorAll('.produto');
+  var qtdDivs = divProduto.length-1;
+  var vMarcas = document.querySelectorAll('.marca');
+  var qtdMarcas = vMarcas.length-1;
 
-  console.log('total de divs produto.lenght ' + divProduto.length)
-  console.log('total de marcas '+ qtdMarcas)
+  // console.log ('vMarcas: '+ vMarcas.forEach )
+  // console.log('total de divs produto.lenght ' + divProduto.length)
+  // console.log('total de marcas '+ qtdMarcas)
 
   for(let i=0; i<=qtdDivs ; i++){
-    // console.log(i);
-    // console.log(divProduto[i].className);
     if(divProduto[i].className.indexOf(filtro)!=-1){
-      // console.log('achou '+vFiltro);
       divProduto[i].classList.remove('hide')
-      // console.log(divProduto[i].className);
       } else{
-      // console.log('não achou '+vFiltro)
       divProduto[i].classList.add('hide');
-      // console.log(divProduto[i].className);
     }
   }
   for(let i=0; i<=qtdMarcas; i++){
-    // console.log(i)
-    // console.log(vMarcas[i].id)
     if(vMarcas[i].id.indexOf(filtro)!=-1 || vMarcas[i].id.indexOf('todos')!=-1){
-      // console.log(vMarcas[i].id + 'dentro do if')
       vMarcas[i].classList.remove('hide')
-      // console.log (vMarcas[i].classList)
+      console.log('remove hide : ' +  vMarcas[i].getAttribute('class') + vMarcas[i].getAttribute('id'))
     } else {
-      // console.log('dentro do else ' + vMarcas[i].id)
       vMarcas[i].classList.add('hide')
-      // console.log (vMarcas[i].classList)
+      console.log('add hide : ' +  vMarcas[i].getAttribute('class') + vMarcas[i].getAttribute('id'))
     }
   }
 
@@ -60,41 +51,42 @@ function filtro_todos(){
 
       <div className="grid">
         <aside className="choose" id='choose'>
-          <div id="apse" className="marca">
+          {(filtro == 'apse' || filtro == '') &&
+            <div id="apse" className="marca">
             <a>
               <img src={require("../imagens/apse.png")} onClick={()=>setFiltro("apse")} />
             </a>
-          </div>
-
+          </div>}
+          {(filtro == 'arvensis' || filtro == '') &&
           <div id="arvensis" className="marca">
             <a>
               <img src={require("../imagens/arvensis.png")} onClick={()=>setFiltro("arvensis")} /> 
             </a>
-          </div>
-
+          </div>}
+          {(filtro == 'auri' || filtro == '') &&
           <div id="auri" className="marca">
             <a>
               <img src={require("../imagens/auri.png")} onClick={()=>setFiltro("auri")} />
             </a>
-          </div>
-
+          </div>}
+          {(filtro == 'magic' || filtro == '') &&
           <div id="magic" className="marca">
             <a>
               <img src={require("../imagens/magic-beauty.png")} onClick={()=>setFiltro("magic")} />
             </a>
-          </div>
-
+          </div>}
+          {(filtro == 'widicare' || filtro == '') &&
           <div id="widicare" className="marca">
             <a>
               <img src={require("../imagens/widicare.png")} onClick={()=>setFiltro("widicare")} />
             </a>
-          </div>
-
+          </div>}
+          {(filtro == 'acessorios' || filtro == '') &&
           <div id="acessorios" className="marca">
             <a>
               <img src={require("../imagens/acessorios.png")} onClick={()=>setFiltro("acessorios")} />
             </a>
-          </div>
+          </div>}
           <div id="todos" className="marca hide">
             <a>
               <img src={require("../imagens/todos.png")} onClick={()=>setFiltro("")} />

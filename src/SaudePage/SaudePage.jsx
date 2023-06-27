@@ -9,7 +9,7 @@ export default function SaudePage(){
     
     <main className="main">
         <div className="parte1">
-            <a href="#tratamentos" className="tratamentos">Tratamentos</a> 
+            <a href="#tratamentos" className="tratamentos">Tratamentos</a> <br />
             <a href="#derma" className="tratamentos">Dermatites</a> <br/>
         </div> 
 {/* <!-----------------------------------------------------TRATAMENTOS --> */}
@@ -49,8 +49,10 @@ export default function SaudePage(){
             <div className="bloquinho">
                 <div className="esquerda">
                     <strong><u>Hidronutrição:</u></strong> <br/>
-                    <img src={require("../imagens/saude-nutrição.png")} alt="" class="image-hidro"/>
-                    <img src={require("../imagens/saude-hidratação.png")} alt="" class="image-hidro"/>
+                    <div className="imgs-hidronutricao">
+                        <img src={require("../imagens/saude-nutrição.png")} alt="" class="image-hidro"/>
+                        <img src={require("../imagens/saude-hidratação.png")} alt="" class="image-hidro"/>
+                    </div>
                     <p>
                     Técnica de tratamento que une a hidratação e a nutrição, tornando-se um poderoso tratamento que auxilia muito quem tem cabelo seco, com mechas, coloração, e quimicamente tratado. <br/>
                     A hidratação devolve água, aminoácidos, e queratina. <br/>

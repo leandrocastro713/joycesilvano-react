@@ -6,13 +6,13 @@ html {
 
   /* ----------------------- CORPO DO SITE ----------------*/
 .textos1{
-  font-size: medium;
+  font-size: 18px;
   text-decoration: underline;
   margin-top: 4vh;
   color: rgb(8, 35, 35);
 }
 .main { 
-  grid-template-columns: 173px 1fr;
+  grid-template-columns: 200px 1fr;
   margin: 0 auto;
   margin-top: 2rem;
   overflow: hidden;
@@ -78,11 +78,17 @@ p{
 .bloquinho{
   display: block;
   position: relative;
-  font-size: 19px;
+  font-size: 18px;
   margin: 1rem auto 0rem;
   margin-bottom: 1rem;
   max-width: 570px;
   padding: 1rem;
+  text-align: center;
+}
+.imgs-hidronutricao {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .esquerda, .direita{
   padding: 0;
@@ -137,8 +143,8 @@ p{
   text-align: justify;
   color: rgb(8, 35, 35);
   line-height: 1.2;
-  font-size: 19px;
-  width: 88%;
+  font-size: 18px;
+  width: 95%;
 }
 .quando-fazer{
   margin-top: 6px;
@@ -207,6 +213,9 @@ summary{
   .corpo{
       margin-left: 1rem;
   }
+  .parte1 {
+    z-index: 100;
+  }
   .corpo .textos {
       margin-top: 0px;
       text-align: center;
@@ -218,9 +227,20 @@ summary{
       margin-bottom: 1rem;
   }
 }
-@media (max-width: 768px){
+@media (max-width: 769px){
+  .container{
+    display:block; 
+  }
+  .parte1 {
+    display:block;
+    /* padding-bottom: 1.5rem; */
+  }
+  .parte1 a{
+    display:block;
+  }
   .main{
-      width: 95%;
+    display:block;
+    width: 95%;
   }
   .image-hidro{
       width: 200px;
@@ -261,7 +281,8 @@ summary{
   }
   .container{
       border-bottom: 2px dotted rgb(24, 67, 44);
-      display:block; text-align: center;
+      display:block; 
+      text-align: center;
       width: 90%;
       padding: 0;
       margin: 0;
@@ -400,7 +421,7 @@ summary{
   }
   #dois.dermatites{
       display: block;
-      width: 96%;
+      width: 100%;
       justify-content: center;
       margin: 0 auto;
   }
