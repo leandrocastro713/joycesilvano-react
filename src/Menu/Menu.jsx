@@ -1,73 +1,102 @@
 import { useState, useEffect } from "react";
 import "./Menu.css";
 
-export default function Menu ({childToParent}) {
-  const [menuShow, setMenuShow ] = useState (true)
-  const [isMobile, setIsMobile] = useState (false)
-  const [dataChild, setDataChild] = useState()
+export default function Menu({ childToParent }) {
+  const [menuShow, setMenuShow] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+  const [dataChild, setDataChild] = useState();
 
-  setInterval(()=>{
-    if(window.screen.width<550){
-      setIsMobile(true)
+  setInterval(() => {
+    if (window.screen.width < 550) {
+      setIsMobile(true);
     } else {
-      setIsMobile(false)
+      setIsMobile(false);
     }
-  },1000)
+  }, 1000);
 
- 
-  function btnClick(){
-    setMenuShow(!menuShow)
-      if(window.screen.width>550){
-        setIsMobile(false)
-      }else{setIsMobile(true)}
+  function btnClick() {
+    setMenuShow(!menuShow);
+    if (window.screen.width > 550) {
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+    }
   }
 
-  function opSelect(op){
-    console.log(op)
-    if(op == 'inicio'){childToParent('inicio')
-      btnClick()}
-    if(op == 'saude'){childToParent('saude')
-      btnClick()}
-      if(op == 'produtos'){childToParent('produtos')
-      btnClick()}
-    if(op == 'dicas'){childToParent('dicas')
-      btnClick()}
-    
+  function opSelect(op) {
+    console.log(op);
+    if (op == "inicio") {
+      childToParent("inicio");
+      btnClick();
+    }
+    if (op == "saude") {
+      childToParent("saude");
+      btnClick();
+    }
+    if (op == "produtos") {
+      childToParent("produtos");
+      btnClick();
+    }
+    if (op == "dicas") {
+      childToParent("dicas");
+      btnClick();
+    }
+    if (op == "galeria") {
+      childToParent("galeria");
+      btnClick();
+    }
   }
 
   return (
-    <div style={!isMobile || menuShow?{visibility:'visible', 
-      animation: 'ease show-in 500ms forwards'}
-      :{animation:'ease show-out 500ms forwards', 
-      animationDuration:'1000ms'}} 
-      id="barra-de-menu" type ='none' >
-      <div style={!isMobile || menuShow?{visibility:'visible', 
-        animation: 'ease show-in 500ms forwards'}
-        :{animation: 'ease show-out 500ms forwards', 
-        animationDuration:'1000ms'}} 
-        id='menu' type ='none'>
+    <div
+      style={
+        !isMobile || menuShow
+          ? { visibility: "visible", animation: "ease show-in 500ms forwards" }
+          : {
+              animation: "ease show-out 500ms forwards",
+              animationDuration: "1000ms",
+            }
+      }
+      id="barra-de-menu"
+      type="none"
+    >
+      <div
+        style={
+          !isMobile || menuShow
+            ? {
+                visibility: "visible",
+                animation: "ease show-in 500ms forwards",
+              }
+            : {
+                animation: "ease show-out 500ms forwards",
+                animationDuration: "1000ms",
+              }
+        }
+        id="menu"
+        type="none"
+      >
         <li>
-          <a onClick={()=>opSelect('inicio')} href="#">
+          <a onClick={() => opSelect("inicio")} href="#">
             Início
           </a>
         </li>
         <li>
-          <a onClick={()=>opSelect('saude')} href="#">
+          <a onClick={() => opSelect("saude")} href="#">
             Saúde
           </a>
         </li>
         <li>
-          <a onClick={()=>opSelect('produtos')} href="#">
+          <a onClick={() => opSelect("produtos")} href="#">
             Produtos
           </a>
         </li>
         <li>
-          <a onClick={()=>opSelect('dicas')} href="#">
+          <a onClick={() => opSelect("dicas")} href="#">
             Dicas
           </a>
         </li>
         <li>
-          <a onClick="galeria-container-show" href="#">
+          <a onClick={() => opSelect("galeria")} href="#">
             Galeria
           </a>
         </li>
@@ -79,11 +108,10 @@ export default function Menu ({childToParent}) {
       </div>
 
       <div className="btn-hamburguer-container">
-        <p id="bt-plus" onClick={()=>btnClick()}>
-          {menuShow?'  -  ':'  +  '}
+        <p id="bt-plus" onClick={() => btnClick()}>
+          {menuShow ? "  -  " : "  +  "}
         </p>
       </div>
-
     </div>
   );
 }

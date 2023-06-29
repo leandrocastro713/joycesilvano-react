@@ -80,18 +80,18 @@ export default function InicioPage() {
 
             <h2>Corte e Penteado da Semana</h2> <br />
             <div className="subartigo2">
-              <a href={require("../galeria/foto202.jpeg")} target="_blank">
+              <a href={require("../galeria/penteados/foto202.jpeg")} target="_blank">
                 <img
                   className="corpensem"
-                  src={require("../galeria/foto202.jpeg")}
+                  src={require("../galeria/penteados/foto202.jpeg")}
                   alt="corte da Semana"
                 />
                 <br />
               </a>
-              <a href={require("../galeria/foto103.jpeg")} target="_blank">
+              <a href={require("../galeria/cortes/foto013.jpeg")} target="_blank">
                 <img
                   className="corpensem"
-                  src={require("../galeria/foto103.jpeg")}
+                  src={require("../galeria/cortes/foto013.jpeg")}
                   alt="corte da Semana"
                 />
               </a>

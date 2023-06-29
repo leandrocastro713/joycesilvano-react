@@ -31,19 +31,19 @@ export default function ProdutosPage() {
     }
   }
 
-function filtro_todos(){
-  var divProduto = document.querySelectorAll('.produto');
-  var vTodos = document.querySelector('#todos')
-  var vMarcas = document.querySelectorAll('.marca')
-  var qtdDivs = divProduto.length-1;
-  for(let i=0; i<vMarcas.length; i++){
-    vMarcas[i].classList.remove('hide')
-  }
-  vTodos.classList.add('hide')
-  for(let i=0; i<=qtdDivs; i++){
-      divProduto[i].classList.remove('hide');
-  }
-}
+// function filtro_todos(){
+//   var divProduto = document.querySelectorAll('.produto');
+//   var vTodos = document.querySelector('#todos')
+//   var vMarcas = document.querySelectorAll('.marca')
+//   var qtdDivs = divProduto.length-1;
+//   for(let i=0; i<vMarcas.length; i++){
+//     vMarcas[i].classList.remove('hide')
+//   }
+//   vTodos.classList.add('hide')
+//   for(let i=0; i<=qtdDivs; i++){
+//       divProduto[i].classList.remove('hide');
+//   }
+// }
 
   return (
     <>
