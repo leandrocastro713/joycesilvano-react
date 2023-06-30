@@ -1,5 +1,5 @@
 import "./GaleriaPage.css";
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 
 export default function GaleriaPage() {
   const [showCortes, setShowCortes] = useState(true);
@@ -58,15 +58,20 @@ export default function GaleriaPage() {
     if(tab == 'antesdepois'){ setShowAntesDepois(true)  }
   }
 
+  function modalOff(e){
+    console.log (e)
+    setShowModal(false)
+  }
   return (
     <>
       {showModal && 
-        <div style={{opacity: 1}} className="modal">
-          <div className="modalContent" onClick={()=>setShowModal(false)}>
+        <div style={showModal?{opacity: 1}:{opacity:0}} className="modal" id = 'imodalContent' >
+          <div className="modalContent" 
+            onClick={(e)=>modalOff(e)}>
             <img
               src={arqModal}
               alt=""
-              id="modalImg" onClick={()=>setShowModal(false)}
+              id="modalImg" onClick={(e)=>modalOff(e)}
             />
           </div>
           <span id="btClose" onClick={()=>setShowModal(false)}>&times;</span>
@@ -99,7 +104,6 @@ export default function GaleriaPage() {
 
           {showCortes && (
             <div className="cortes">
-              {/* <!-- AQUI VAI O JAVASCRIPT COM AS IMAGENS DE CORTES --> */}
               { arqsCortes.map((arq)=>( 
                 <img src={arq} className="imagem" onClick={()=>toModal(arq)}/>
               ))}
@@ -108,7 +112,6 @@ export default function GaleriaPage() {
 
           {showPenteados && (
             <div className="penteados">
-              {/* <!-- AQUI VAI O JAVASCRIPT COM AS IMAGENS DE PENTEADOS --> */}
               { arqsPenteados.map((arq)=>( 
                 <img src={arq} className="imagem" onClick={()=>toModal(arq)}/>
               ))}
@@ -118,10 +121,15 @@ export default function GaleriaPage() {
 
           {showAntesDepois && (
             <div className="antesdepois">
-              {/* <!-- AQUI VAI O JAVASCRIPT COM AS IMAGENS DE ANTES E DEPOIS --> */}
-              { arqsAntesdepois.map((arq)=>( 
-                <img src={arq} className="imagem" onClick={()=>toModal(arq)}/>
-              ))}
+              { arqsAntesdepois.map((arq, idx)=>(
+                (idx%2==0)?
+                  <p style={{"display":"inlineBlock"}}>Antes
+                    <img src={arq} className="imagem" onClick={()=>toModal(arq)}/></p>
+                    :
+                    <p>
+                      <img src={arq} className="imagem" onClick={()=>toModal(arq)}/> Depois 
+                    </p> 
+              ))} 
             </div>
           )}
         </div>
