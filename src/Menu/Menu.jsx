@@ -45,6 +45,10 @@ export default function Menu({ childToParent }) {
       childToParent("galeria");
       btnClick();
     }
+    if (op == "contato") {
+      childToParent("contato");
+      btnClick();
+    }
   }
 
   return (
@@ -101,7 +105,7 @@ export default function Menu({ childToParent }) {
           </a>
         </li>
         <li>
-          <a onClick="contato-container-show" href="#">
+          <a onClick={() => opSelect("contato")} href="#">
             Contato
           </a>
         </li>

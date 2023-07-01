@@ -8,6 +8,7 @@ import SaudePage from './SaudePage/SaudePage'
 import ProdutosPage from './ProdutosPage/ProdutosPage'
 import DicasPage from './DicasPage/DicasPage'
 import GaleriaPage from './GaleriaPage/GaleriaPage'
+import ContatoPage from './ContatoPage/ContatoPage'
 
 export default function App() {
   
@@ -38,6 +39,7 @@ export default function App() {
     if(atualPage == 'produtos'){setShowProdutosPage(true)}
     if(atualPage == 'dicas'){setShowDicasPage(true)}
     if(atualPage == 'galeria'){setShowGaleriaPage(true)}
+    if(atualPage == 'contato'){setShowContatoPage(true)}
   }
 
   return (
@@ -50,6 +52,7 @@ export default function App() {
       {showProdutosPage && <ProdutosPage />}
       {showDicasPage && <DicasPage />}
       {showGaleriaPage && <GaleriaPage />}
+      {showContatoPage && <ContatoPage />}
       <Rodape />
     </div>
   

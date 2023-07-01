@@ -6,7 +6,8 @@
   margin-top: 1.5rem;
 }
 .side {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-right: 1rem;
   padding: 1rem;
   justify-content: right;
@@ -28,7 +29,7 @@
   font-weight: bolder;
   color: black;
   width: 100%;
-  padding: 10px;
+  padding: 10px 10px 0;
   text-align: end;
 }
 .container {
@@ -163,6 +164,7 @@
   font-weight: bold;
 }
 .antesdepois{
+  margin-top: 1rem;;
   display:flex;
   justify-content: space-between;
 }
