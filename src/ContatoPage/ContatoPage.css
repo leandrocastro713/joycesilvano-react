@@ -1,7 +1,7 @@
 body{
   overflow-x: hidden;
 }
-.grid{
+.grid-contato{
   display:grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
@@ -16,7 +16,7 @@ body{
   max-width: 900px;
   overflow-x: hidden;
 }
-.grid img:hover{
+.grid-contato img:hover{
   transition: ease-in-out 300ms;
   transform: scale(1.06);
 }
@@ -66,6 +66,7 @@ a{
 }
 .facebook, .instagram, .whatsapp{
   overflow: hidden;
+  width:100%;
 }
 video{
   transition: all 500ms;
@@ -103,7 +104,7 @@ video:hover{
 
 /*---------------------- MEDIA QUERY --------------------*/
 @media (max-width: 826px){
-  .grid{
+  .grid-contato{
       display: flex;
       flex-direction: column;
       width: 95%;
@@ -129,17 +130,17 @@ video:hover{
 
 }
 @media (max-width: 376px){
-  .grid{
+  .grid-contato{
       overflow: hidden;
       display: block;
       grid-template-columns: 1fr;
       margin: 0 auto;
-      width: 96%;
+      width: 100%;
   }
   .principal{
       width: 96%;
       position: relative;
-      margin: rem auto;
+      margin: 1rem auto;
   }
   video{
       padding-top: 20px;
@@ -152,7 +153,10 @@ video:hover{
       border:none;
   }
   .facebook, .instagram, .whatsapp {
-      width: 90%;
+      text-align:center;
       overflow: hidden;
+  }
+  .facebook img, .instagram img, .whatsapp img{
+    width:100%;
   }
 }

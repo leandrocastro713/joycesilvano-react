@@ -3,7 +3,7 @@ import "./ContatoPage.css"
 export default function ContatoPage() {
   return (
     <>
-      <div className="grid">
+      <div className="grid-contato">
         <div className="principal">
           <div className="facebook">
             <a
