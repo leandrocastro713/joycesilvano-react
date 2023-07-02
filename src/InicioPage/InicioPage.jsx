@@ -1,9 +1,28 @@
 import "./InicioPage.css";
+import { useState, useLayoutEffect } from "react"
 
 export default function InicioPage() {
+  const [hoje, setHoje] = useState('')
+
+  let myDate = '';
+  let dds = ['Domingo','Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+  let mes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro','Novembro', 'Dezembro'];
+
+  const datadehoje = new Date();
+  let day = datadehoje.getDay();
+  let month = datadehoje.getMonth();
+  let year = datadehoje.getFullYear();
+
+  myDate = dds[day] + ', ' + datadehoje.getDate() + ' de ' + mes[month] + ' de ' + year;
+  console.log(myDate);
+
+  useLayoutEffect(()=>{
+    setHoje(myDate)
+  },1)
+  
   return (
     <>
-      <h2 id="hoje">Hoje</h2>
+      <h2 id="hoje">{hoje}</h2>
       <div className="corpo-inicio">
         <section className="coluna-esquerda">
           <div className="tempo1" id="cont_2a0ca20bd00cf475dfec3c63c18724a3">
@@ -124,7 +143,7 @@ export default function InicioPage() {
             <br />
           </div>
 
-          <div className="artigo">
+          <div className="artigo ultimo">
             <h2>
               A higienização é o primeiro passo para tudo dar certo no cuidado
               da saúde capilar

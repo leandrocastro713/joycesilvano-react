@@ -14,7 +14,7 @@ p {
   font-weight: 500;
 }
 #hoje {
-  margin: 2rem;
+  margin: 2rem 2rem 0;
 }
 .corpensem {
   height: 220px;
@@ -60,6 +60,7 @@ hr {
 .tempo2 {
   display: block;
 }
+
 .artigo {
   display: block;
   position: relative;
@@ -68,6 +69,9 @@ hr {
   justify-content: center;
   padding: .5rem 0 1.5rem;
   border-bottom: 1px dotted rgb(15, 15, 20);
+}
+.ultimo{
+  border: none;
 }
 .artigo a {
   font-weight: bold;

@@ -139,7 +139,7 @@
   }
   #menu:hover{
     transition: 300ms ease all;
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
   #barra-de-menu{
     position:fixed;

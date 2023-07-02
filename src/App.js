@@ -12,7 +12,6 @@ import ContatoPage from './ContatoPage/ContatoPage'
 
 export default function App() {
   
-  const[defaultPage, setDefaultPage] = useState('inicio')
   const[atualPage, setAtualPage] = useState('inicio')
   
   const[showInicioPage, setShowInicioPage] = useState(true)
