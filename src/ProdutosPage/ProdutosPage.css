@@ -8,6 +8,11 @@ body {
   display: block;
   display: none;
 }
+h3{
+  position:relative;
+  display:block;
+  margin: 3rem 4rem;
+}
 .grid {
   transition: ease-in-out 300ms;
   margin: 0 auto;
@@ -193,6 +198,9 @@ a {
     width: 98%;
     margin-top: 10px;
   }
+  main{
+    margin: 1.5rem auto .5rem;
+  }
   .choose {
     display: flex;
     justify-content: center;
@@ -213,6 +221,12 @@ a {
   }
   .descricao {
     padding-right: 20px;
+  }
+  .side{
+    padding: 0 0 1rem;
+  }
+  .side a{
+    width:100%;
   }
 }
 @media (max-width: 470px) {
