@@ -1,5 +1,6 @@
 import "./InicioPage.css";
 import { useState, useLayoutEffect } from "react"
+import ReactPlayer from 'react-player/youtube'
 
 export default function InicioPage() {
   const [hoje, setHoje] = useState('')
@@ -50,10 +51,10 @@ export default function InicioPage() {
             <h2>Joyce Silvano</h2>
 
             <div className="subartigo">
-              <a href={require("../imagens/joyce-card.jpg")} target="_blank">
+              <a href={require("../imagens/joyce-agenda-aberta.jpg")} target="_blank">
                 <img
                   className="joyce-card"
-                  src={require("../imagens/joyce-card.jpg")}
+                  src={require("../imagens/joyce-agenda-aberta.jpg")}
                   alt="Joyce Silvano"
                 />
                 <br />
@@ -162,11 +163,8 @@ export default function InicioPage() {
               Você percebeu que a higienização é somente no couro cabeludo!
             </p>
             <br />
-            <img
-              className="imagem2"
-              src={require("../imagens/higienização.jpeg")}
-              alt=""
-            />
+            <ReactPlayer className='video-higi' width='95%' url='https://www.youtube.com/shorts/8IIHEjunDKI' /><br />
+            
           </div>
         </section>
 

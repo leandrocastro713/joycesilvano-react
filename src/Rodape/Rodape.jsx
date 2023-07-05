@@ -20,13 +20,13 @@ export default function Rodape() {
           <img src={require("../imagens/logo-facebook.png")} alt="" />
           <p>joycesilvanocabeloslivres</p>
         </div>
-        {/* <div className="lf-text">
+        <div className="lf-text">
           <img id="local-icon" src={require("../imagens/local.png")} alt="" />
-          <a href="https://goo.gl/maps/Zr7eW77xYXTCKorJ9" target="_blank">
-            <p>Em breve novo local de atendimento</p>
-            <p>Viamão - RS</p>
+          <a href="https://goo.gl/maps/9hjxA34xCZ2L59i47" target="_blank">
+            <p>Avenida Bento Gonsalves, 2115</p>
+            <p>Porto Alegre - RS</p>
           </a>
-        </div> */}
+        </div>
       </div>
 
       <div className="right-footer">

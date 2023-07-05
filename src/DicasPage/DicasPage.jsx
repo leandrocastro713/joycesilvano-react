@@ -1,4 +1,7 @@
 import "./DicasPage.css"
+import ReactPlayer from 'react-player/youtube'
+
+
 
 export default function DicasPage() {
   return (
@@ -19,7 +22,8 @@ export default function DicasPage() {
       </div>
       <div className="dica">
         <h2>Durinho de gel</h2>
-          {/* <video  src={require("https://youtube.com/shorts/M9WQJ8rIL7A?feature=share")} allowFullScreen /> */}
+        <ReactPlayer className='video-durinho' width='100%' url='https://www.youtube.com/shorts/M9WQJ8rIL7A' /><br />
+         
         <p>
           O que fazer quando seu cabelo ficar com aquele durinho de gel? Coloque
           3 gotinhas de óleo na palma da mão (esfregue as mãos) e amasse o seu

@@ -22,6 +22,9 @@
   margin-bottom: 1rem;
   color: rgb(9, 23, 10);
 }
+.video-durinho{
+  margin:1rem;
+}
 main {
   margin: 2rem auto;
   display: grid;
