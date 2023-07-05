@@ -166,11 +166,6 @@ export default function SaudePage() {
             </strong>
             <br />
             <ReactPlayer className='video-ozonio' width='100%' url='https://www.youtube.com/shorts/I6d6mBW2emA' /><br />
-            {/* <video
-              className="centralizado video-ozonio"
-              controls
-              src={require("../imagens/saude-ozonio.mp4")}
-            ></video> */}
             <p>
               Técnica de tratamento realizado com água e ozônio em forma de
               vapor. Esse penetra nos fios deixando- os mais hidratados, macios

@@ -1,4 +1,5 @@
 import "./ContatoPage.css"
+import ReactPlayer from 'react-player/youtube'
 
 export default function ContatoPage() {
   return (
@@ -38,15 +39,10 @@ export default function ContatoPage() {
 
         <div className="sidebar">
           <p className="quem">Quem sou eu?</p>
-          <video
-            height="582px"
-            controls
-            src={require("../video-apresentacao.mp4")}
-            poster={require("../imagens/poster-video.jpg")}
-          ></video>
+            <ReactPlayer className='video-durinho' width='100%' url='https://www.youtube.com/shorts/vnJAeBG3Ly8' /><br />
           <a
             id="canal"
-            href="https://www.youtube.com/channel/UCwdqLawDA80REm8e68YkVqA/videos"
+            href="https://www.youtube.com/channel/UCBflT4U-trl4CUdJfC6xKnQ"
             target="_blank"
           >
             <img src={require("../imagens//youtube-logo.png")} alt="youtube-logo" />
