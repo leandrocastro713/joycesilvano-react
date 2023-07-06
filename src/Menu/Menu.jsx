@@ -54,9 +54,9 @@ export default function Menu({ childToParent }) {
     <div
       style={
         !isMobile || menuShow
-          ? { visibility: "visible", animation: "ease show-in 500ms forwards" }
+          ? { visibility: "visible", animation: "ease show-in 300ms forwards" }
           : {
-              animation: "ease show-out 500ms forwards",
+              animation: "ease show-out 300ms forwards",
               animationDuration: "1000ms",
             }
       }
@@ -68,10 +68,10 @@ export default function Menu({ childToParent }) {
           !isMobile || menuShow
             ? {
                 visibility: "visible",
-                animation: "ease show-in 500ms forwards",
+                animation: "ease show-in 300ms forwards",
               }
             : {
-                animation: "ease show-out 500ms forwards",
+                animation: "ease show-out 300ms forwards",
                 animationDuration: "1000ms",
               }
         }

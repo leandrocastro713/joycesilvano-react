@@ -8,6 +8,10 @@ body {
   display: block;
   display: none;
 }
+.embreve {
+  width: 300px;
+  margin: 3rem 0 2rem;
+}
 h3{
   position:relative;
   display:block;

@@ -33,7 +33,8 @@ export default function ProdutosPage() {
 
   return (
     <>
-      <h3>Em breve!</h3>
+      {/* <h3>Em breve!</h3> */}
+      <img className='embreve'src={require("../imagens/em_breve.png" )} alt="" />
     </>
   );
 }

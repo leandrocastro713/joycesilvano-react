@@ -12,7 +12,7 @@
   text-align: center;
   color: rgb(212, 168, 211);
   z-index: 1000;
-  /* transition: all ease 300ms; */
+  transition: all ease 200ms;
 }
 #barra-de-menu ul {
   display: inline-block;
@@ -135,10 +135,10 @@
     align-items: center;
     letter-spacing: 1.6px;
     font-weight: 900;
-    /* transition: all ease 300ms; */
+    transition: all ease 200ms;
   }
   #menu:hover{
-    transition: 300ms ease all;
+    transition: 200ms ease all;
     transform: scale(1.02);
   }
   #barra-de-menu{
@@ -157,6 +157,6 @@
     width:200px;
     height: 300px;
     padding:6px 6px 19px 6px;
-    /* transition: all ease 300ms; */
+    transition: all ease 200ms;
   }
 }
