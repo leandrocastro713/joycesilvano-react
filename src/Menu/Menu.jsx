@@ -4,10 +4,9 @@ import "./Menu.css";
 export default function Menu({ childToParent }) {
   const [menuShow, setMenuShow] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
-  const [dataChild, setDataChild] = useState();
 
   setInterval(() => {
-    if (window.screen.width < 550) {
+    if (window.screen.width <= 500) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -16,7 +15,7 @@ export default function Menu({ childToParent }) {
 
   function btnClick() {
     setMenuShow(!menuShow);
-    if (window.screen.width > 550) {
+    if (window.screen.width > 500) {
       setIsMobile(false);
     } else {
       setIsMobile(true);
@@ -112,7 +111,7 @@ export default function Menu({ childToParent }) {
       </div>
 
       <div className="btn-hamburguer-container">
-        <p id="bt-plus" onClick={() => btnClick()}>
+        <p id="bt-plus" onClick={()=>btnClick()}>
           {menuShow ? "  -  " : "  +  "}
         </p>
       </div>

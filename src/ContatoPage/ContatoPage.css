@@ -62,6 +62,7 @@ a{
   position:relative;
   background-position: left;
   align-items: center;
+  left: -50px;
   margin: 0 auto 1rem;
 }
 .facebook, .instagram, .whatsapp{
@@ -142,6 +143,10 @@ video:hover{
       position: relative;
       margin: 1rem auto;
   }
+  .video-durinho{
+    display:flex;
+    margin:0 auto;
+  }
   video{
       padding-top: 20px;
       margin: 0 auto;
@@ -158,5 +163,8 @@ video:hover{
   }
   .facebook img, .instagram img, .whatsapp img{
     width:100%;
+  }
+  .whatsapp img {
+    left:0px;
   }
 }
