@@ -218,7 +218,6 @@ export default function InicioPage() {
           </div>
 
           <div className="artigo">
-            <h2> Avisos</h2>
             <a
               href={require("../imagens/promoções-higienização.jpg")}
               target="_blank"
