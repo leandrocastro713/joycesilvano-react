@@ -16,12 +16,12 @@ export default function GaleriaPage() {
   var tempArq = "";
 
   var arqsCortes = []
-  // ----------------- fotos 1 até 92 --- IMAGENS DOS CORTES
-  for (let i = 1; i <= 92; i++) {
+  // ----------------- fotos 1 até 94 --- IMAGENS DOS CORTES
+  for (let i = 94; i >= 1; i--) {
     if (i < 10) {
       tempArq = "../galeria/cortes/foto00" + i + ".jpeg";
     }
-    if (i >= 10 && i <= 92) {
+    if (i >= 10 && i <= 94) {
       tempArq = "../galeria/cortes/foto0" + i + ".jpeg";
     }
     arqsCortes = [...arqsCortes, tempArq]
