@@ -10,10 +10,6 @@ export default function ProdutosPage() {
   var vMarcas = document.querySelectorAll('.marca');
   var qtdMarcas = vMarcas.length-1;
 
-  // console.log ('vMarcas: '+ vMarcas.forEach )
-  // console.log('total de divs produto.lenght ' + divProduto.length)
-  // console.log('total de marcas '+ qtdMarcas)
-
   for(let i=0; i<=qtdDivs ; i++){
     if(divProduto[i].className.indexOf(filtro)!=-1){
       divProduto[i].classList.remove('hide')

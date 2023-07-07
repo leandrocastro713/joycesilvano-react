@@ -10,7 +10,8 @@ body {
 }
 .embreve {
   width: 300px;
-  margin: 3rem 0 2rem;
+  display:block;
+  margin: 3rem auto 2rem;
 }
 h3{
   position:relative;
