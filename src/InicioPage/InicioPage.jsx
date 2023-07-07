@@ -1,26 +1,54 @@
 import "./InicioPage.css";
-import { useState, useLayoutEffect } from "react"
-import ReactPlayer from 'react-player/youtube'
+import { useState, useLayoutEffect } from "react";
+import ReactPlayer from "react-player/youtube";
 
 export default function InicioPage() {
-  const [hoje, setHoje] = useState('')
+  const [hoje, setHoje] = useState("");
 
-  let myDate = '';
-  let dds = ['Domingo','Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
-  let mes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro','Novembro', 'Dezembro'];
+  let myDate = "";
+  let dds = [
+    "Domingo",
+    "Segunda-feira",
+    "Terça-feira",
+    "Quarta-feira",
+    "Quinta-feira",
+    "Sexta-feira",
+    "Sábado",
+  ];
+  let mes = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ];
 
   const datadehoje = new Date();
   let day = datadehoje.getDay();
   let month = datadehoje.getMonth();
   let year = datadehoje.getFullYear();
 
-  myDate = dds[day] + ', ' + datadehoje.getDate() + ' de ' + mes[month] + ' de ' + year;
+  myDate =
+    dds[day] +
+    ", " +
+    datadehoje.getDate() +
+    " de " +
+    mes[month] +
+    " de " +
+    year;
   console.log(myDate);
 
-  useLayoutEffect(()=>{
-    setHoje(myDate)
-  },1)
-  
+  useLayoutEffect(() => {
+    setHoje(myDate);
+  }, 1);
+
   return (
     <>
       <h2 id="hoje">{hoje}</h2>
@@ -47,11 +75,13 @@ export default function InicioPage() {
           </div> */}
 
           <div className="artigo">
-   
             <h2>Joyce Silvano</h2>
 
             <div className="subartigo">
-              <a href={require("../imagens/joyce-agenda-aberta.jpg")} target="_blank">
+              <a
+                href={require("../imagens/joyce-agenda-aberta.jpg")}
+                target="_blank"
+              >
                 <img
                   className="joyce-card"
                   src={require("../imagens/joyce-agenda-aberta.jpg")}
@@ -75,7 +105,6 @@ export default function InicioPage() {
           </div>
 
           <div className="artigo">
-
             <h2>Você sabe a curvatura do seu cabelo?</h2>
             <p className="textos textoEsquerda inicio-texto">
               Confira na tabela abaixo, a curvatura do fio do seu cabelo.
@@ -93,14 +122,15 @@ export default function InicioPage() {
                 <br />
               </a>
             </div>
-          
           </div>
 
           <div className="artigo">
-
             <h2>Corte e Penteado da Semana</h2> <br />
             <div className="subartigo2">
-              <a href={require("../galeria/penteados/foto202.jpeg")} target="_blank">
+              <a
+                href={require("../galeria/penteados/foto202.jpeg")}
+                target="_blank"
+              >
                 <img
                   className="corpensem"
                   src={require("../galeria/penteados/foto202.jpeg")}
@@ -108,7 +138,10 @@ export default function InicioPage() {
                 />
                 <br />
               </a>
-              <a href={require("../galeria/cortes/foto013.jpeg")} target="_blank">
+              <a
+                href={require("../galeria/cortes/foto013.jpeg")}
+                target="_blank"
+              >
                 <img
                   className="corpensem"
                   src={require("../galeria/cortes/foto013.jpeg")}
@@ -118,7 +151,7 @@ export default function InicioPage() {
             </div>
           </div>
 
-          <div className="artigo">
+          {/* <div className="artigo">
             <h2>Produto em destaque</h2>
             <p className="inicio-textos">
               Confira os produtos em destaque desta semana.
@@ -142,13 +175,14 @@ export default function InicioPage() {
               </a>
             </div>
             <br />
-          </div>
+          </div> */}
 
           <div className="artigo ultimo">
             <h2>
               A higienização é o primeiro passo para tudo dar certo no cuidado
               da saúde capilar
-            </h2><br />
+            </h2>
+            <br />
             <p className="textoEsquerda">
               Primeiro, molhe bem o couro cabeludo,
             </p>
@@ -163,20 +197,36 @@ export default function InicioPage() {
               Você percebeu que a higienização é somente no couro cabeludo!
             </p>
             <br />
-            <ReactPlayer className='video-higi' width='95%' url='https://www.youtube.com/shorts/8IIHEjunDKI' /><br />
-            
+            <ReactPlayer
+              className="video-higi"
+              width="95%"
+              url="https://www.youtube.com/shorts/8IIHEjunDKI"
+            />
+            <br />
           </div>
         </section>
 
         {/* <!-------------------------------- coluna direita --> */}
 
         <section className="coluna-direita">
+
           <div className="artigo">
             <h2> Avisos</h2>
-            <a href={require("../imagens/promo-aguardem.jpg")} target="_blank">
-              <img id="promo" src={require("../imagens/promo-aguardem.jpg")} />
+            <a href={require("../imagens/promoções.jpg")} target="_blank">
+              <img id="promo" src={require("../imagens/promoções.jpg")} />
             </a>
           </div>
+
+          <div className="artigo">
+            <h2> Avisos</h2>
+            <a
+              href={require("../imagens/promoções-higienização.jpg")}
+              target="_blank"
+            >
+              <img id="promo" src={require("../imagens/promoções-higienização.jpg")} />
+            </a>
+          </div>
+
         </section>
       </div>
 
