@@ -38,8 +38,7 @@
   align-content: center;
 }
 .loading {
-  /* position: relative;
-      display: block; */
+  display: block; 
   margin: auto auto;
   justify-content: center;
   align-content: center;
@@ -54,19 +53,7 @@
   margin: 0 auto;
 }
 .cortes,
-.antesdepois {
-  transition: all 500ms;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  border: 1px dotted gray;
-  border-radius: 5px;
-  padding: 5px;
-  max-width: 1200px;
-  min-width: 300px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
+.antesdepois,
 .penteados {
   transition: all 500ms;
   flex-wrap: wrap;
@@ -80,21 +67,20 @@
   margin: 0 auto;
   margin-bottom: 1rem;
 }
-
 .blur1 {
   transition: all 300ms;
   filter: blur(4px);
 }
 .imagem {
   transition: all 500ms;
-  position:relative;
-  display:inline-block;
+  position: relative;
+  display: inline-block;
   width: 70px;
   height: 70px;
   padding: 0px;
   margin: 6px;
   border-radius: 20px;
-  filter: grayscale(.4);
+  filter: grayscale(0.4);
   cursor: pointer;
 }
 .imagem:hover {
@@ -124,7 +110,7 @@
   align-content: center;
   align-items: center;
   position: fixed;
-  display:block;
+  display: block;
   opacity: 0;
   z-index: 3;
 }
@@ -137,12 +123,6 @@
   justify-content: center;
   align-items: center;
 }
-/* .modalActive {
-  transition: ease-in-out 500ms;
-  opacity: 1;
-  visibility: visible;
-  align-items: center;
-} */
 #btClose {
   position: absolute;
   color: white;
@@ -159,22 +139,21 @@
   background-color: rgb(198, 80, 80);
 }
 .titulo2 {
-  /* font-family: fonteH4; */
   font-size: 19px;
   font-weight: bold;
 }
-.antesdepois{
-  margin-top: 1rem;;
-  display:flex;
+.antesdepois {
+  margin-top: 1rem;
+  display: flex;
   justify-content: space-between;
 }
-.antesdepois p{
-  display:flex;
-  position:relative;
-  width:fit-content;
+.antesdepois p {
+  display: flex;
+  position: relative;
+  width: fit-content;
   align-items: center;
   justify-content: space-evenly;
-  width:50%;
+  width: 50%;
   padding: 0 15px;
   text-align: center;
 }
@@ -186,7 +165,11 @@
 }
 @media (max-width: 600px) {
   .grid {
+    grid-template-columns: 1fr;
     width: 480px;
+  }
+  .side a {
+    text-align: center;
   }
 }
 
@@ -194,10 +177,6 @@
   .grid {
     margin-top: 0;
     max-width: 98%;
-    grid-template-columns: 1fr;
-  }
-  .side a {
-    text-align: center;
   }
   #modalImg {
     width: 98%;
@@ -210,7 +189,7 @@
   }
   #btClose {
     right: 10px;
-    top:10px;
+    top: 10px;
   }
   .grid {
     border: none;
@@ -218,7 +197,6 @@
     margin: 0 auto;
   }
   .side {
-    /* display: none; */
     width: 86%;
     margin: 0 auto;
   }

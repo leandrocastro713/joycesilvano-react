@@ -1,6 +1,7 @@
 import "./InicioPage.css";
 import { useState, useLayoutEffect } from "react";
 import ReactPlayer from "react-player/youtube";
+import ImageLink from "./ImageLink/ImageLink";
 
 export default function InicioPage() {
   const [hoje, setHoje] = useState("");
@@ -212,18 +213,9 @@ export default function InicioPage() {
 
           <div className="artigo">
             <h2> Avisos</h2>
-            <a href={require("../imagens/promoções.jpg")} target="_blank">
-              <img id="promo" src={require("../imagens/promoções.jpg")} />
-            </a>
-          </div>
+            <ImageLink link="./img/promoções.jpg"  />
 
-          <div className="artigo">
-            <a
-              href={require("../imagens/promoções-higienização.jpg")}
-              target="_blank"
-            >
-              <img id="promo" src={require("../imagens/promoções-higienização.jpg")} />
-            </a>
+            <ImageLink link="./img/promoções-higienização.jpg" />
           </div>
 
         </section>
