@@ -38,8 +38,11 @@ export default function GaleriaPage() {
 
   var arqsAntesdepois = []
   // // ---------- fotos 301 até 330 ---- IMAGENS DOS ANTES E DEPOIS
-  for (let i = 364; i >= 301; i--) {
+  for (let i = 363; i >= 302; i-=2) {
+    console.log(i)
     tempArq = "../galeria/antesdepois/foto" + i + ".jpeg";
+    arqsAntesdepois = [...arqsAntesdepois, tempArq]
+    tempArq = "../galeria/antesdepois/foto" + (i+1) + ".jpeg";
     arqsAntesdepois = [...arqsAntesdepois, tempArq]
   }
 
