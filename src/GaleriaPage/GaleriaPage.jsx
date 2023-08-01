@@ -17,11 +17,11 @@ export default function GaleriaPage() {
 
   var arqsCortes = []
   // ----------------- fotos 1 até 94 --- IMAGENS DOS CORTES
-  for (let i = 94; i >= 1; i--) {
+  for (let i = 99; i >= 1; i--) {
     if (i < 10) {
       tempArq = "../galeria/cortes/foto00" + i + ".jpeg";
     }
-    if (i >= 10 && i <= 94) {
+    if (i >= 10 && i <= 99) {
       tempArq = "../galeria/cortes/foto0" + i + ".jpeg";
     }
     arqsCortes = [...arqsCortes, tempArq]
@@ -30,7 +30,7 @@ export default function GaleriaPage() {
 
   var arqsPenteados = []
   // // ---------- fotos 201 até 230 ---- IMAGENS DOS PENTEADOS
-  for (let i = 201; i <= 230; i++) {
+  for (let i = 230; i >= 201; i--) {
     tempArq = "../galeria/penteados/foto" + i + ".jpeg";
     arqsPenteados = [...arqsPenteados, tempArq]
   }
@@ -38,7 +38,7 @@ export default function GaleriaPage() {
 
   var arqsAntesdepois = []
   // // ---------- fotos 301 até 330 ---- IMAGENS DOS ANTES E DEPOIS
-  for (let i = 301; i <= 330; i++) {
+  for (let i = 364; i >= 301; i--) {
     tempArq = "../galeria/antesdepois/foto" + i + ".jpeg";
     arqsAntesdepois = [...arqsAntesdepois, tempArq]
   }

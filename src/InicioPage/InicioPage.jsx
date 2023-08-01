@@ -149,6 +149,26 @@ export default function InicioPage() {
                   alt="corte da Semana"
                 />
               </a>
+              <a
+                href="./galeria/cortes/foto095.jpeg"
+                target="_blank"
+              >
+                <img
+                  className="corpensem"
+                  src="./galeria/cortes/foto095.jpeg"
+                  alt="corte da Semana"
+                />
+              </a>
+              <a
+                href="./galeria/cortes/foto099.jpeg"
+                target="_blank"
+              >
+                <img
+                  className="corpensem"
+                  src="./galeria/cortes/foto099.jpeg"
+                  alt="corte da Semana"
+                />
+              </a>
             </div>
           </div>
 

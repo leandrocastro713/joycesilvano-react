@@ -127,9 +127,10 @@ hr {
 }
 .subartigo2 {
   display: flex;
-  float: none;
+  overflow-x: scroll;
+  overflow-y: hidden;
   position: relative;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .textoEsquerda {
   justify-content: left;
@@ -199,13 +200,6 @@ hr {
   .subartigo2 {
     margin: 0px;
     padding: 0px;
-  }
-  .corpensem {
-    margin: 0;
-    padding: 2px;
-    width: 98%;
-    height: 98%;
-    align-items: center;
   }
   .imagem1 {
     width: 98%;

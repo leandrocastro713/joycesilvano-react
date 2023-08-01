@@ -1,7 +1,7 @@
 import './App.css';
 import Header from "./Header/Header"
 import Menu from "./Menu/Menu"
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import InicioPage from './InicioPage/InicioPage'
 import Rodape from './Rodape/Rodape'
 import SaudePage from './SaudePage/SaudePage'
