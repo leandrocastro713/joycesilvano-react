@@ -23,7 +23,7 @@ export default function Rodape() {
         <div className="lf-text">
           <img id="local-icon" src={require("../imagens/local.png")} alt="" />
           <a href="https://goo.gl/maps/9hjxA34xCZ2L59i47" target="_blank">
-            <p>Avenida Bento Gonsalves, 2115</p>
+            <p>Avenida Bento Gonsalves, nº 2115</p>
             <p>Porto Alegre - RS</p>
           </a>
         </div>

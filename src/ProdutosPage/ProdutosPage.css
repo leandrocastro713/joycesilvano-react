@@ -1,302 +1,71 @@
-/* ----------------------- CORPO DO SITE ----------------*/
-body {
-  overflow-x: hidden;
-  margin-top: 0;
-}
-.hide {
-  transition: ease-in-out 300ms;
-  display: block;
-  display: none;
-}
-.embreve {
-  width: 300px;
-  display:block;
-  margin: 3rem auto 2rem;
-}
-h3{
-  position:relative;
-  display:block;
-  margin: 3rem 4rem;
-}
-.grid {
-  transition: ease-in-out 300ms;
-  margin: 0 auto;
-  padding: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  width: 98%;
-}
-.choose {
-  display: block;
-  position: relative;
-  transition: ease-in-out 300ms;
-  margin: 0;
-  padding: 0;
-  padding-top: 81px;
-  width: 170px;
-}
-.container {
-  transition: ease-in-out 300ms;
+.produtos_container {
   display: flex;
+  justify-content: center;
+  margin: 1.5rem auto 2rem;
+  max-width: 1000px;
+  min-height: 400px;
+  position: relative;
+  width: 96%;
+  height: 100%;
+}
+.produto_card {
+  color: rgb(41, 22, 40);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 7px;
+  position: relative;
   width: 100%;
-  height: fit-content;
-  flex-wrap: wrap;
 }
-.texto-aviso {
-  padding: 0 20px 10px;
+.produto_card a {
+  text-decoration: none;
+  color: rgb(41, 22, 40);
 }
-.produto {
-  transition: ease-in-out 300ms;
-  padding: 0.5rem;
-  font-family: fonteH4;
-  border: 1px solid rgb(118, 117, 118);
+.produto_card img {
+  height: 250px;
+  width: min-content;
   border-radius: 4px;
-  margin: 1rem;
-  text-align: center;
-  width: 380px;
-  border-radius: 10px;
-  max-height: 260px;
-  overflow: hidden;
+  margin: 0 18px 0 0;
 }
-.produto img {
-  transition: ease-in-out 300ms;
-  position: relative;
-  display: block;
-  float: left;
-  width: 180px;
-  max-height: 230px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.produto:hover {
-  transition: ease-out 300ms;
-  background-color: rgba(231, 199, 214, 0.7);
-}
-.produto a:hover {
-  transition: ease-in-out 300ms;
-  color: rgb(33, 33, 31);
-}
-
-a {
-  text-decoration: none;
-  color: rgb(6, 17, 69);
-}
-#aviso {
-  display: block;
-  position: relative;
+.produto_card p {
   width: 100%;
-  margin: 10px;
-  padding: 15px;
-  font-family: fonteH4;
-  font-weight: 600;
-  text-align: center;
-}
-.marca {
-  display: block;
   position: relative;
-  justify-content: center;
-  padding: 1rem;
-  cursor: pointer;
-  width: 200px;
-  transition: ease-in-out 300ms;
-}
-.marca img {
-  transition: ease-in-out 300ms;
-  position: relative;
-  margin: 0 auto;
-  display: block;
-  padding-right: 1rem;
-  width: 150px;
-}
-.marca img:hover {
-  border-right: 2px solid gray;
-}
-.textoProduto {
-  margin-top: 0px;
-  margin-left: -19px;
-  padding-left: 0px;
-  padding-bottom: 0px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  float: right;
-  text-decoration: none;
-  width: 185px;
-  align-items: left;
-  text-align: left;
-  color: rgb(6, 69, 13);
-}
-.descricao {
-  transition: ease-in-out 00ms;
-  margin-bottom: 20px;
-  margin-top: 5px;
-  padding-right: 4px;
-  padding-bottom: 0px;
-  color: rgb(6, 17, 69);
-  font-weight: 600;
-  display: block;
-  width: 180px;
-  font-family: fonteH4;
   font-size: 16px;
-  padding-top: 0px;
-  padding: 10px 15px;
+  text-align: left;
+  margin: 0 8px;
+  line-height: 1.25;
 }
-.preco {
-  transition: ease-in-out 800ms;
-  font-weight: 600;
-  display: block;
-  float: right;
-  align-items: flex-end;
-  text-align: right;
+.card_text{
+  position:relative;
+  width:96%;
+}
+.produto_card h2 {
+  font-weight: bolder;
   font-size: 20px;
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-right: 5px;
-  margin-bottom: 5px;
+  width: 100%;
+  margin-bottom: 0.8rem;
 }
-#topo {
-  position: relative;
-  text-decoration: none;
-  display: block;
-  width: 80%;
-  font-family: fonteH4;
-  justify-content: center;
-  margin: 0 auto 2rem;
-  padding: 1rem;
-}
-/*---------------------- MEDIA QUERY --------------------*/
-@media (min-width: 1480px) {
-  .choose {
-    padding-top: 140px;
-  }
-  .container {
-    width: 1290px;
-  }
-}
-@media (max-width: 1058px) {
-  .grid {
-    width: 600px;
-  }
-}
-@media (max-width: 910px) {
-  .corpo {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    width: 95vw;
-  }
-  .produto {
-    border-radius: 8px;
-    align-items: center;
-    margin: 0rem;
-    margin-bottom: 1rem;
-  }
-}
-@media (max-width: 600px) {
-  .grid {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    width: 98%;
-    margin-top: 10px;
-  }
-  main{
-    margin: 1.5rem auto .5rem;
-  }
-  .choose {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 10px;
-    width: 98%;
-  }
-  .marca{
-    padding: .5rem;
-  }
-  .container {
-    width: 98%;
-    position: relative;
-    justify-content: center;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
-  .descricao {
-    padding-right: 20px;
-  }
-  .side{
-    padding: 0 0 1rem;
-  }
-  .side a{
-    width:100%;
-  }
-}
-@media (max-width: 470px) {
-  .textos {
-    margin-bottom: 1rem;
-  }
-  #topo {
-    width: 90%;
-  }
-  .produto {
-    position: relative;
-    justify-content: center;
-    float: none;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    width: 98%;
-    max-height: none;
-    max-width: none;
-  }
-  .produto a{
-    text-align: left;
-  }
-  .textoProduto {
-    padding-left: 0px;
-    /* padding-bottom: 2px; */
-    position: relative;
-    display: flex;
-    text-decoration: none;
-    width: 90%;
-    align-items: left;
-    text-align: left;
-    margin: 1rem;
-    color: rgb(6, 69, 13);
-  }
-  .produto a img {
-    width: 250px;
-    margin: 0 auto;
-    display: flex;
-    position: relative;
-    float: none;
-    width: 200px;
-    /* height: 200px; */
-  }
-  .descricao {
-    width: 90%;
-  }
-  .preco {
-    width: 100%;
-    display: block;
-    float: right;
-    position: relative;
-    margin-right: 8px;
+
+@media (max-width: 900px) {
+  .produtos_container {
+    flex-direction: column;
   }
 }
 
-@media (max-width: 320px) {
-  .titulo {
-    height: 3rem;
+@media (max-width: 650px) {
+  .produto_card {
+    flex-direction: column;
+    padding: 24px 10px;
+    border-bottom: 1px dotted gray;
   }
-  .titulo h1 {
-    font-size: 28px;
-    float: none;
+  .produto_card:last-child{
+    border-bottom: none;
   }
-  .container p{
-    padding:0;
-    margin:0 auto 15px;
+  .produto_card img {
+    margin: 0 auto 0.8rem;
+    position: relative;
+  }
+  .produto_card p {
+    margin: 0;
   }
 }
