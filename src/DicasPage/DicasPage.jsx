@@ -1,6 +1,6 @@
 import DicasItem from "./DicasItem";
 import "./DicasPage.css";
-import ReactPlayer from "react-player/youtube";
+// import ReactPlayer from "react-player/youtube";
 
 export default function DicasPage() {
   return (
@@ -32,8 +32,10 @@ export default function DicasPage() {
       />
       <DicasItem
         title={"Tempo de corte"}
-        video={'https://www.youtube.com/shorts/NHrpsiUFNnk'}
-        description={"Eu recomento, para cabelos mais curtos, com um cacho mais aberto, ou ondulado, um corte a cada 3 ou 4 meses e para cabelos longos, em até 6 meses. Mas atenção! Nunca deixe o corte passar de um ano pois as pontas afinam e danificam, fazendo com que seja nescessário uma retirada maior no comprimento."}
+        video={"https://www.youtube.com/shorts/NHrpsiUFNnk"}
+        description={
+          "Eu recomento, para cabelos mais curtos, com um cacho mais aberto, ou ondulado, um corte a cada 3 ou 4 meses e para cabelos longos, em até 6 meses. Mas atenção! Nunca deixe o corte passar de um ano pois as pontas afinam e danificam, fazendo com que seja nescessário uma retirada maior no comprimento."
+        }
       />
     </main>
   );

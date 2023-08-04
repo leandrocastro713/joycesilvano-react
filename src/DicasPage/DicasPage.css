@@ -3,6 +3,10 @@
   max-width: 500px;
   width: 96%;
   margin: 1rem auto;
+  border-bottom: 1px dotted gray;
+}
+.dica:last-child{
+  border-bottom: none;
 }
 .dica h2 {
   font-weight: bolder;

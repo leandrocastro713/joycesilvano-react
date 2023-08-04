@@ -1,16 +1,16 @@
 .grid {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-rows: 180px 1fr;
   width: 800px;
   margin: 0 auto;
-  margin-top: 1.5rem;
+  margin-top: .5rem;
 }
 .side {
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
   padding: 1rem;
-  justify-content: right;
+  justify-content: center;
 }
 .hide {
   transition: ease-in-out 500ms;
@@ -30,7 +30,7 @@
   color: black;
   width: 100%;
   padding: 10px 10px 0;
-  text-align: end;
+  text-align: center;
 }
 .container {
   display: block;
