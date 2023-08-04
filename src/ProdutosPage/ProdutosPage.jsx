@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./ProdutosPage.css";
+import ProdutoDesc from "./ProdutoDesc";
 import Tags from "./Tags/Tags";
 
 export default function ProdutosPage() {
@@ -41,72 +42,40 @@ export default function ProdutosPage() {
   return (
     <>
       <div className="produtos_container">
-        <div className="produto_card">
-          <a href={require("../../src/produtos/apse01.jpeg")} target="_blank">
-            <img src={require("../../src/produtos/apse01.jpeg")} alt="" />
-          </a>
-          <div className="card_text">
-            <a
-              href="https://api.whatsapp.com/send/?phone=5551998497549&text=Ol%C3%A1%21+Vim+direcionada+do+site+e+tenho+interesse+no+produto+Apse+Mousse+Nutritivo.&type=phone_number&app_absent=0"
-              target="blank"
-            >
-              <h2>Apse Mousse Nutritivo</h2>
-              <Tags
-                tags={["ANTIFRIZ", "DEFINIÇÃO", "PROTEÇÃO TÉRMICA", "VOLUME"]}
-              />
-              <p>
-                Chegou a solução para o frizz e definição mais duradoura dos
-                seus cachos, com o volume que você ama! Hidrata e defini de
-                forma mais duradoura. Produto com proteção térmica. Cabelos
-                hidratados e nutridos e a nova solução para o seu day after.
-              </p>
-            </a>
-          </div>
-        </div>
+        <h3>Mais informações sobre os produtos, clique no ícone do Whattsapp.</h3>
+        <ProdutoDesc
+          xref={"../produtos/apse01.jpeg"}
+          title={"Apse Mousse Nutritivo"}
+          tags={["ANTIFRIZ", "DEFINIÇÃO", "PROTEÇÃO TÉRMICA", "VOLUME"]}
+          text={
+            "Chegou a solução para o frizz e definição mais duradoura dos seus cachos, com o volume que você ama! Hidrata e defini de     forma mais duradoura. Produto com proteção térmica. Cabelos    hidratados e nutridos e a nova solução para o seu day after."
+          }
+        />
 
-        <div className="produto_card">
-          <a href={require("../../src/produtos/apse02.jpeg")} target="_blank">
-            <img src={require("../../src/produtos/apse02.jpeg")} alt="" />
-          </a>
-          <div className="card_text">
-            <a
-              href="https://api.whatsapp.com/send/?phone=5551998497549&text=Ol%C3%A1%21+Vim+direcionada+do+site+e+tenho+interesse+no+produto+Apse+Gelatina+Ativadora.&type=phone_number&app_absent=0"
-              target="blank"
-            >
-              <h2>Apse Gelatina Ativadora</h2>
-              <Tags tags={["ANTIFRIZ", "DEFINIÇÃO", "FIXAÇÃO", "DAYAFTER"]} />
-              <p>
-                Indispensável para quem gosta de definição! Super versátil, pode
-                ser usado nos fios secos ou molhados – misturando ao ativador de
-                cachos ou sozinho. Liberado para Low Poo e No poo Uso diário –
-                Sem enxágue – Não deixa resíduo! Para cabelos cacheados,
-                ondulados, crespos ou em transição capilar pH 3,0 a 4,0
-                aproximadamente. .
-              </p>
-            </a>
-          </div>
-        </div>
+        <ProdutoDesc
+          xref={"../produtos/apse02.jpeg"}
+          title={"Apse Gelatina Ativadora"}
+          tags={["ANTIFRIZ", "DEFINIÇÃO", "FIXAÇÃO", "DAYAFTER"]}
+          text={
+            "Indispensável para quem gosta de definição! Super versátil, pode ser usado nos fios secos ou molhados – misturando ao ativador de cachos ou sozinho. Liberado para Low Poo e No poo Uso diário – Sem enxágue – Não deixa resíduo! Para cabelos cacheados, ondulados, crespos ou em transição capilar pH 3,0 a 4,0 aproximadamente."
+          }
+        />
 
-        <div className="produto_card">
-          <a href={require("../../src/produtos/apse03.jpeg")} target="_blank">
-            <img src={require("../../src/produtos/apse03.jpeg")} alt="" />
-          </a>
-          <div className="card_text">
-            <a
-              href="https://api.whatsapp.com/send/?phone=5551998497549&text=Ol%C3%A1%21+Vim+direcionada+do+site+e+tenho+interesse+no+produto+Apse+Ativador+e+Modelador.&type=phone_number&app_absent=0"
-              target="blank"
-            >
-              <h2>Apse Ativador e Modelador</h2>
-              <Tags tags={["ANTIFRIZ", "DEFINIÇÃO", "FIXAÇÃO", "BRILHO"]} />
-              <p>
-                Cachos definidos, controlados e sem frizz. Hidrata e desenvolve
-                o movimento natural dos cabelos. Uso diário – Sem enxágue – Não
-                deixa resíduo! Para cabelos ondulados, cacheados, crespos e em
-                transição! pH 3,0 a 4,0 aproximadamente.
-              </p>
-            </a>
-          </div>
-        </div>
+        <ProdutoDesc
+          xref={"../produtos/apse03.jpeg"}
+          title={"Apse Ativador e Modelador"}
+          tags={["ANTIFRIZ", "DEFINIÇÃO", "FIXAÇÃO", "BRILHO"]}
+          text={
+            "Cachos definidos, controlados e sem frizz. Hidrata e desenvolve o movimento natural dos cabelos. Uso diário – Sem enxágue – Não deixa resíduo! Para cabelos ondulados, cacheados, crespos e em transição! pH 3,0 a 4,0 aproximadamente."
+          }
+        />
+
+        <a
+          href="https://api.whatsapp.com/send/?phone=5551998497549&text=Ol%C3%A1%21+Vim+direcionada+do+site+e+tenho+interesse+nos+produtos.&type=phone_number&app_absent=0"
+          target="blank"
+        >
+          <img id="produto_whatts" src={"./img/logo-whatsapp.png"} alt="" />
+        </a>
       </div>
     </>
   );

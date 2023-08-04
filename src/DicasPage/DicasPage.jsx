@@ -22,7 +22,7 @@ export default function DicasPage() {
       </div>
       <div className="dica">
         <h2>Durinho de gel</h2>
-        <ReactPlayer className='video-durinho' width='100%' url='https://www.youtube.com/shorts/M9WQJ8rIL7A' /><br />
+        <ReactPlayer className='video_durinho' width='100%' url='https://www.youtube.com/shorts/M9WQJ8rIL7A' /><br />
          
         <p>
           O que fazer quando seu cabelo ficar com aquele durinho de gel? Coloque

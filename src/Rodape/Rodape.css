@@ -52,7 +52,9 @@
   padding-left: 0.5rem;
 }
 
-.wp-footer,.ig-footer,.fb-footer {
+.wp-footer,
+.ig-footer,
+.fb-footer {
   display: grid;
   grid-template-columns: 30px 135px;
   position: relative;
@@ -80,15 +82,24 @@
 @media (max-width: 636px) {
   .rodape {
     grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .lf-text{
+    margin-left: 0px;
+  }
+  .left-footer {
+    width: 97%;
+    margin: 0 auto;
+  }
+  .wp-footer,
+  .ig-footer,
+  .fb-footer {
+    margin-left: 0px;
   }
 }
 
 @media (max-width: 321px) {
-  .rodape{
+  .rodape {
     padding: 15px 0 55px;
-  }
-  .left-footer {
-    width: 95%;
-    margin: 0 auto;
   }
 }

@@ -2,7 +2,7 @@
   display: block;
   max-width: 500px;
   width: 96%;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
 }
 .dica h2 {
   font-weight: bolder;
@@ -17,13 +17,15 @@
   text-align: left;
   font-weight: 600;
   font-size: large;
-  width: 95%;
+  width: 100%;
   padding: 0 10px;
   margin-bottom: 1rem;
   color: rgb(9, 23, 10);
 }
-.video-durinho{
-  margin:1rem;
+.video_durinho{
+  position:relative;
+  width:97%;
+  margin:1rem auto;
 }
 main {
   margin: 2rem auto;
