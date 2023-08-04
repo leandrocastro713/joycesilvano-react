@@ -1,6 +1,7 @@
 .produtos_container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 1.5rem auto 2rem;
   max-width: 1000px;
   min-height: 400px;
@@ -16,6 +17,7 @@
   padding: 7px;
   position: relative;
   width: 100%;
+  max-width: 456px;
 }
 .produto_card:last-child{
   border:none;
@@ -48,11 +50,11 @@
   width: 100%;
   margin-bottom: 0.8rem;
 }
-#produto_whatts{
+#produto_whatts {
   display: flex;
   position: fixed;
-  right: 7px;
-  bottom: 61px;
+  right: 5px;
+  bottom: 72px;
   height: 65px;
   margin: 8px auto;
   padding: 8px;
@@ -62,6 +64,9 @@
 @media (max-width: 900px) {
   .produtos_container {
     flex-direction: column;
+  }
+  .produto_card {
+    max-width: fit-content;
   }
 }
 

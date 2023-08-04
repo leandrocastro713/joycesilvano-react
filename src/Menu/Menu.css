@@ -63,7 +63,9 @@
   /* transition: 300ms ease all; */
 }
 .btn-hamburguer-container {
+  animation: 3s ease hueani 3000ms infinite;
   display:inline-block;
+  border:2px solid gray;
   cursor: pointer;
   visibility: collapse;
   /* transition: all ease 300ms; */
@@ -73,7 +75,14 @@
   font-weight: 900;
   font-size: 1.6rem;
 }
-
+@keyframes hueani {
+  0% { 
+    filter:hue-rotate(0deg);
+  }
+  100% { 
+    filter:hue-rotate(360deg);
+  }
+}
 @keyframes show-in {
   0%{opacity:0%};
   100%{opacity:100%};
@@ -89,13 +98,14 @@
     font-weight: 900;
     font-size: 30px;
     align-items: center;
-    background-color: rgba(238, 170, 234, 0.8);
-    border: 1px rgb(225, 191, 219) solid;
+    background-color: rgba(238, 170, 234, 0.9);
+    border: 2px rgb(69, 56, 65) solid;
     border-radius: 50px;
     padding:10px;
     z-index: 1001;
     color:black;
-    height: 50px;
+    height: 60px;
+    width: 60px;
     top:20px;
     position:relative;
     box-shadow: 3px 3px rgba(128, 128, 128, 0.782);

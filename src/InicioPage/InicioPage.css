@@ -70,6 +70,9 @@ hr {
   padding: .5rem 0 1.5rem;
   border-bottom: 1px dotted rgb(15, 15, 20);
 }
+.artigo:last-child{
+  border:none;
+}
 .ultimo{
   border: none;
 }
