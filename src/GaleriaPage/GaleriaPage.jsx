@@ -99,7 +99,7 @@ export default function GaleriaPage() {
           {showLoading && <div className="loading">
             <img
               className="loadingGif"
-              src={require("../imagens/loading.gif")}
+              src='./img/loading.gif'
               alt=""
             />
             <p>Carregando imagens ...</p>

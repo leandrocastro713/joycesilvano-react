@@ -80,12 +80,12 @@ export default function InicioPage() {
 
             <div className="subartigo">
               <a
-                href={require("../imagens/joyce-agenda-aberta.jpg")}
+                href="./img/joyce-agenda-aberta.jpg"
                 target="_blank"
               >
                 <img
                   className="joyce-card"
-                  src={require("../imagens/joyce-agenda-aberta.jpg")}
+                  src="./img/joyce-agenda-aberta.jpg"
                   alt="Joyce Silvano"
                 />
                 <br />
@@ -112,12 +112,12 @@ export default function InicioPage() {
             </p>
             <div className="subartigo">
               <a
-                href={require("../imagens/mapa-curvatura.jpg")}
+                href="./img/mapa-curvatura.jpg"
                 target="_blank"
               >
                 <img
                   className="imagem1"
-                  src={require("../imagens/mapa-curvatura.png")}
+                  src="./img/mapa-curvatura.png"
                   alt="mapa-de-curvatura"
                 />
                 <br />
@@ -171,32 +171,6 @@ export default function InicioPage() {
               </a>
             </div>
           </div>
-
-          {/* <div className="artigo">
-            <h2>Produto em destaque</h2>
-            <p className="inicio-textos">
-              Confira os produtos em destaque desta semana.
-            </p><br />
-            <div className="subartigo2">
-              <a href={require("../produtos/acessorios06.jpg")} target="_blank">
-                <img
-                  className="corpensem"
-                  src={require("../produtos/acessorios06.jpg")}
-                  alt="arvensis"
-                />
-                <br />
-              </a>
-              <a href={require("../produtos/arvensis01.jpg")} target="_blank">
-                <img
-                  className="corpensem"
-                  src={require("../produtos/arvensis01.jpg")}
-                  alt="arvensis"
-                />
-                <br />
-              </a>
-            </div>
-            <br />
-          </div> */}
 
           <div className="artigo ultimo">
             <h2>

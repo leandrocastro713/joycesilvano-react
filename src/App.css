@@ -10,9 +10,9 @@ body {
   background-color: rgb(242, 189, 232);
   text-align: center;
   align-items: center;
-  background-image: url('./imagens/bkg012.jpg');
+  background-image: url('./img/bkg1.png');
   background-repeat: repeat-y;
   background-attachment: scroll;
   background-size: 100%;
-  background-blend-mode: soft-light;
+  background-blend-mode: color;
 }

@@ -12,7 +12,7 @@ export default function ContatoPage() {
               target="_blank"
             >
               <span>Facebook</span>
-              <img src={require("../imagens/banner-facebook.png")} />
+              <img src="./img/banner-facebook.png" />
             </a>
           </div>
           <div className="instagram">
@@ -21,7 +21,7 @@ export default function ContatoPage() {
               target="_blank"
             >
               <span>Instagram</span>
-              <img src={require("../imagens/banner-instagram.png")} />
+              <img src='./img/banner-instagram.png' />
             </a>
           </div>
           <div className="whatsapp">
@@ -30,7 +30,7 @@ export default function ContatoPage() {
               target="_blank"
             >
               <span>Whatsapp</span>
-              <img src={require("../imagens/banner-whatsapp.png")} />
+              <img src="./img/banner-whatsapp.png" />
             </a>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function ContatoPage() {
             target="_blank"
           >
             <img
-              src={require("../imagens//youtube-logo.png")}
+              src="./img/youtube-logo.png"
               alt="youtube-logo"
             />
             Visite meu canal no Youtube

@@ -14,19 +14,19 @@ export default function Header() {
             href="https://www.facebook.com/Joyce-Silvano-cabelos-reais-111105454080975/"
             target="_blank"
           >
-            <img src={require("../imagens/logo-facebook.png")} alt="facebook" />
+            <img src="./img/logo-facebook.png" alt="facebook" />
           </a>
           <a
             href="https://www.instagram.com/joycesilvanocabeloslivres/"
             target="_blank"
           >
-            <img src={require("../imagens/logo-instagram.png")} alt="instagram" />
+            <img src="./img/logo-instagram.png" alt="instagram" />
           </a>
           <a
             href="https://wa.me/5551998497549?text=Olá!%20Vim%20direcionada%20do%20site%20e%20gostaria%20de%20fazer%20um%20orçamento."
             target="_blank"
           >
-            <img src={require("../imagens/logo-whatsapp.png")} alt="whatsapp" />
+            <img src="./img/logo-whatsapp.png" alt="whatsapp" />
           </a>
         </div>
       </div>

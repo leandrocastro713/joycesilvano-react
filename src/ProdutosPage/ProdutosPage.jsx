@@ -74,7 +74,7 @@ export default function ProdutosPage() {
           href="https://api.whatsapp.com/send/?phone=5551998497549&text=Ol%C3%A1%21+Vim+direcionada+do+site+e+tenho+interesse+nos+produtos.&type=phone_number&app_absent=0"
           target="blank"
         >
-          <img id="produto_whatts" src={"./img/logo-whatsapp.png"} alt="" />
+          <img id="produto_whatts" src={"./img/logo-whatsapp-color.png"} alt="" />
         </a>
       </div>
     </>

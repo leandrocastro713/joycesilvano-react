@@ -9,19 +9,19 @@ export default function Rodape() {
           <br />
         </p>
         <div className="wp-footer">
-          <img src={require("../imagens/logo-whatsapp.png")} alt="" />
+          <img src="./img/logo-whatsapp.png" alt="" />
           <p>(51) 99849-7549</p>
         </div>
         <div className="ig-footer">
-          <img src={require("../imagens/logo-instagram.png")} alt="" />
+          <img src="./img/logo-instagram.png" alt="" />
           <p>joycesilvanocabeloslivres</p>
         </div>
         <div className="fb-footer">
-          <img src={require("../imagens/logo-facebook.png")} alt="" />
+          <img src="./img/logo-facebook.png" alt="" />
           <p>joycesilvanocabeloslivres</p>
         </div>
         <div className="lf-text">
-          <img id="local-icon" src={require("../imagens/local.png")} alt="" />
+          <img id="local-icon" src="./img/local.png" alt="" />
           <a href="https://goo.gl/maps/9hjxA34xCZ2L59i47" target="_blank">
             <p>Avenida Bento Gonsalves, nº 2115</p>
             <p>Porto Alegre - RS</p>

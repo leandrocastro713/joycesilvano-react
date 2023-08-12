@@ -1,426 +1,103 @@
-html {
-  scroll-behavior: smooth;
-}
-* {
-  font-family: "Comfortaa", sans-serif;
-}
-
-/* ----------------------- CORPO DO SITE ----------------*/
-.textos1 {
-  font-size: 18px;
-  text-decoration: underline;
-  margin-top: 4vh;
-  color: rgb(8, 35, 35);
-}
-.main {
-  grid-template-columns: 200px 1fr;
-  margin: 0 auto;
-  margin-top: 2rem;
-  overflow: hidden;
-  display: grid;
-  position: relative;
-  color: rgb(8, 35, 35);
+.saude_container {
   align-items: center;
-  max-width: 1104px;
-  padding-top: 1rem;
-}
-.tratamentos {
-  font-weight: 700;
-  margin-bottom: 15px;
-  padding: 5px;
-}
-.dermatites {
-  width: 100%;
-  margin: 0 auto;
-}
-.centralizado {
-  display: block;
-  float: none;
-  padding-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin: 0 auto;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-}
-p {
-  line-height: 1.1;
-}
-.video-ozonio{
-  margin: 1rem auto;
-}
-.parte1 {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: relative;
-  text-align: justify;
-  float: left;
-  border-right: 2px solid gray;
-}
-.parte1 a {
-  text-decoration: none;
-  letter-spacing: 4.5px;
-  font-weight: 600;
-  font-size: larger;
   color: rgb(8, 35, 35);
-  width: 100%;
-}
-.parte2 {
-  display: block;
-  position: relative;
-  float: right;
-  padding: 10px;
-  margin: 0 auto;
-}
-.parte2 p {
-  font-weight: 600;
-  width: 100%;
-  margin: 0 auto;
-  line-height: 22.6px;
-  text-align: left;
-}
-.bloquinho {
-  display: block;
-  position: relative;
-  font-size: 18px;
-  margin: 1rem auto 0rem;
-  margin-bottom: 1rem;
-  max-width: 769px;
-  padding: 1rem;
-  text-align: center;
-}
-.imgs-hidronutricao {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.esquerda,
-.direita {
-  padding: 0;
-  margin: 0 auto;
-  line-height: 1.2;
+  flex-direction: column;
+  margin: .3rem auto 2.8rem;
+  max-width: 1104px;
+  min-height: 450px;
+  overflow: hidden;
+  padding-top: 1.5rem;
   position: relative;
-  text-align: left;
-  width: 96%;
 }
-.esquerda p,
-.direita p {
-  margin: 0;
-  text-align: justify;
-  width: 100%;
-}
-.esquerda u {
-  font-size: larger;
-}
-.container {
-  margin: 0 auto;
-  display: block;
-  width: 90%;
-  font-size: large;
-  text-align: left;
-  margin-bottom: 2rem;
-}
-
-.corpo .textos1 {
-  text-decoration: underline;
-  text-align: left;
-  font-size: 16px;
-}
-.subtitulo {
-  color: rgb(24, 102, 102);
-  font-weight: 900;
-  font-size: larger;
-  text-align: center;
-  margin: 1rem auto 0.8rem;
-}
-#separador {
-  font-size: 60px;
-  margin: 2rem;
-}
-.st {
-  color: rgb(24, 102, 102);
-  font-weight: normal;
-  margin-top: 0px;
-  margin-bottom: 8px;
-  font-size: 19px;
-}
-.texto {
-  position: relative;
-  text-align: justify;
-  color: rgb(8, 35, 35);
-  line-height: 1.2;
-  font-size: 18px;
-  width: 95%;
-}
-.quando-fazer {
-  margin-top: 6px;
-}
-.imagem-alo {
-  display: block;
-  margin: 0 auto;
-  width: 250px;
-  margin-bottom: 1rem;
-  border-radius: 6px;
-}
-.image {
-  width: 300px;
-  display: block;
-  height: auto;
-  position: relative;
-  margin: 1rem auto;
-}
-.image-hidro {
-  width: 250px;
-  display: inline-block;
-  justify-content: center;
-  height: auto;
-  position: relative;
-  margin: 1rem auto;
-  /* box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.384); */
-}
-.imagem {
-  display: block;
-  margin: 0 auto;
-  width: 250px;
-  height: 280px;
-  margin-bottom: 1rem;
-  border-radius: 6px;
-}
-.img-acid {
-  width: 96%;
-  max-width: 350px;
-  border-radius: 6px;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 1rem;
-}
-.separador {
-  margin: 0 auto;
-  font-size: 46px;
-  margin-bottom: 1rem;
-}
-summary {
-  margin-top: -14px;
-  margin-bottom: 16px;
-}
-.topo {
+.saude_container a{
   text-decoration: none;
-  position: relative;
-  display: block;
-  font-weight: bolder;
-  text-align: center;
-  width: 90%;
-  margin: 0 auto;
-  padding: 1rem;
+  font-size: 20px;
+  color:rgb(33, 32, 32);
+  font-weight: 600;
+  padding: 5px 15px;
 }
-#derma {
-  margin: 1rem 0 .5rem 1rem;
+.saude_block{
+  transition: 300ms ease all;
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  padding: 0 6px 20px;
+  width:100%;
+  margin:0 auto;
 }
-/*---------------------- MEDIA QUERY --------------------*/
-@media (max-width: 769px) {
-  .corpo {
-    margin-left: 1rem;
-  }
-  .parte1 {
-    z-index: 100;
-    display: block;
-  }
-  .parte1 a {
-    display: block;
-  }
-  .parte2 {
-    margin: 0 auto;
-  }
-  .corpo .textos {
-    margin-top: 0px;
-    text-align: center;
-    margin-bottom: 6px;
-    margin-top: 7px;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  .container {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  .main {
-    display: block;
-    width: 95%;
-  }
-  .image-hidro {
-    width: 200px;
-  }
-  .direita {
-    border-bottom: 2px dotted rgb(24, 67, 44);
-  }
-  .bloquinho {
-    padding: 0px;
-    display: block;
-    position: relative;
-    width: 100%;
-    border: none;
-    display: block;
-  }
-  p {
-    width: 101%;
-    justify-content: left;
-  }
-  .video{
-    margin-bottom: 1rem;
+.title{
+  border-radius: 10px;
+  background-color: rgba(250, 235, 215, 0.719);
+  box-shadow: 3px 4px 10px gray;
+  cursor:pointer;
+  display:inline-block;
+  margin: 1.5rem 0.5rem;
+  padding: 10px 25px 7px;
+  position:relative;
+}
+.title:hover{
+  box-shadow: 3px 4px 5px gray;
+  transition:200ms all ease;
+  background-color: rgb(240, 167, 213);
+}
+@keyframes unfold{
+  from{
+    height:500px;
+   }
+  to{
+    height:0px;
   }
 }
-@media (max-width: 550px) {
-  .container {
-    border-bottom: 2px dotted rgb(24, 67, 44);
-    display: block;
-    text-align: center;
-    width: 90%;
-    padding: 0;
-    margin: 0;
-  }
-  .container p {
-    margin: 0 auto;
-    text-align: justify;
-    width: 93%;
-  }
-  .container img {
-    width: 90%;
-    margin: 1rem
-  }
-  #dois {
-    padding: 0;
-  }
-  #dois > div {
-    padding-bottom: 1rem;
-    width: 100%;
-  }
-  .esquerda,
-  .direita {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 0px 0px;
-    font-weight: normal;
-  }
-  .direita p {
-    text-align: left;
-  }
-  .bloquinho {
-    position: relative;
-    width: 93%;
-    margin: 0 auto;
-  }
-  .imagem {
-    margin-bottom: 1rem;
-  }
-  details {
-    scroll-behavior: smooth;
-  }
-  .main {
-    grid-template-columns: 1fr;
-    width: 96%;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .parte1 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0;
-    height: fit-content;
-  }
-  .parte1 a {
-    font-weight: 600;
-    letter-spacing: 4.5px;
-    padding: 4px;
-  }
-  .parte2 {
-    position: relative;
-    float: none;
-    margin: 0 auto;
-    margin-top: 1rem;
-    display: block;
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .parte2 p {
-    padding: 0px;
-    position: relative;
-    text-align: left;
-  }
-
-  .separador {
-    margin: 0 auto;
-    font-size: 46px;
-  }
-  .st {
-    width: 90%;
-    margin-left: 1.2rem;
-    font-weight: bold;
-  }
-
-  .summary {
-    margin-left: 2.1rem;
-    font-weight: bold;
-  }
-
-  .tratamentos {
-    position: relative;
-    display: block;
-    margin-bottom: 0;
-    margin-left: 1.5rem;
-    padding: 18px;
-  }
-  .texto {
-    margin: 1.5rem;
-    text-align: justify;
-    width: 100%;
-  }
-  .textos1 {
-    margin: 1.5rem auto 1rem auto;
-    font-weight: normal;
-    padding: 0px;
-    float: none;
-    width: 100%;
-  }
-  .image-hidro {
-    display: block;
-  }
-  .video {
-    width: 96%;
-    height: auto;
-    margin: 1rem 0 1rem;
-  }
+.saude_sub_title{
+  background-color: rgba(250, 235, 215, 0.5);
+  border-radius: 14px;
+  padding:14px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+  position:relative;
+  width:100%;
+  margin:0 auto;
 }
-@media (max-width: 320px) {
-  .main {
-    width: 100%;
-  }
-  .parte2 {
-    margin: 0 auto;
-    width: 95%;
-  }
-  .container {
-    margin: 0 auto;
-    width: 100%;
-  }
-  .container .texto {
-    margin: 0 auto;
-    width: 96%;
-    padding: 0;
-  }
-  .esquerda,
-  .direita {
-    margin-bottom: 1rem;
-    margin-top: 0rem;
-  }
-  .centralizado {
-    width: 100%;
-  }
-  .st {
-    margin-bottom: 8px;
-  }
-  .separador {
-    font-size: 2.4rem;
-  }
+.saude_image {
+  border-radius: 4px;
+  width:200px;
+  display:block;
+  position:relative;
+  margin: 18px auto 20px;
+}
+.saude_image_derma {
+  border-radius: 4px;
+  width:300px;
+  display:block;
+  position:relative;
+  margin: 18px auto 20px;
+}
+.saude_text{
+  width:86vw;
+  text-align: justify;
+  /* text-justify: inter-word; */
+  display:inline-block;
+  position:relative;
+  margin: 0 auto 10px;
+  text-align: left;
+  line-height: 1.2rem;
+}
+.saude_video{
+  max-width: 400px;
+  margin: 8px auto 12px;
+}
+.check_icon_container{
+  height: 100%;
+  position:relative;
+  display:inline-block;
+  align-items: center;
+}
+.check_icon {
+  height:20px;
+  color:black;
+  position:relative;
+  margin:auto 6px;
+  display:flex;
 }
