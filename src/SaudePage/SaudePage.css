@@ -1,4 +1,16 @@
-.saude_container {
+.check_icon_container{
+  height: 100%;
+  position:relative;
+  display:inline-block;
+  align-items: center;
+}
+.check_icon {
+  height:20px;
+  color:black;
+  position:relative;
+  margin:auto 6px;
+  display:flex;
+}.saude_container {
   align-items: center;
   color: rgb(8, 35, 35);
   display: flex;
@@ -9,6 +21,11 @@
   overflow: hidden;
   padding-top: 1.5rem;
   position: relative;
+}
+.saudeTextUp{
+  width:90%;
+  position:relative;
+  text-align: justify;
 }
 .saude_container a{
   text-decoration: none;
@@ -25,6 +42,47 @@
   padding: 0 6px 20px;
   width:100%;
   margin:0 auto;
+}
+.saude_sub_title{
+  background-color: rgba(250, 235, 215, 0.5);
+  border-radius: 14px;
+  padding:14px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+  position:relative;
+  width:100%;
+  margin:0 auto;
+}
+.saude_image {
+  border-radius: 4px;
+  width:200px;
+  display:block;
+  position:relative;
+  margin: 18px auto 20px;
+}
+.mg-top{
+  margin-top: 1rem;
+}
+.saude_image_derma {
+  border-radius: 4px; 
+  width:300px;
+  display:block;
+  position:relative;
+  margin: 18px auto 20px;
+}
+.saude_text{
+  width:90%;
+  text-align: justify;
+  display:inline-block;
+  position:relative;
+  margin: 0 auto 10px;
+  text-align: left;
+  line-height: 1.2rem;
+}
+.saude_video{
+  max-width: 400px;
+  margin: 8px auto 12px;
 }
 .title{
   border-radius: 10px;
@@ -48,56 +106,4 @@
   to{
     height:0px;
   }
-}
-.saude_sub_title{
-  background-color: rgba(250, 235, 215, 0.5);
-  border-radius: 14px;
-  padding:14px;
-  cursor: pointer;
-  font-size: 22px;
-  font-weight: 600;
-  position:relative;
-  width:100%;
-  margin:0 auto;
-}
-.saude_image {
-  border-radius: 4px;
-  width:200px;
-  display:block;
-  position:relative;
-  margin: 18px auto 20px;
-}
-.saude_image_derma {
-  border-radius: 4px;
-  width:300px;
-  display:block;
-  position:relative;
-  margin: 18px auto 20px;
-}
-.saude_text{
-  width:86vw;
-  text-align: justify;
-  /* text-justify: inter-word; */
-  display:inline-block;
-  position:relative;
-  margin: 0 auto 10px;
-  text-align: left;
-  line-height: 1.2rem;
-}
-.saude_video{
-  max-width: 400px;
-  margin: 8px auto 12px;
-}
-.check_icon_container{
-  height: 100%;
-  position:relative;
-  display:inline-block;
-  align-items: center;
-}
-.check_icon {
-  height:20px;
-  color:black;
-  position:relative;
-  margin:auto 6px;
-  display:flex;
 }

@@ -18,6 +18,14 @@ export default function SaudePage() {
 
   return (
     <main className="saude_container">
+      <h2>Tratamentos e Dermatites</h2> <br />
+      <p className="saudeTextUp">
+        Para cuidar do couro cabeludo, é importante seguir algumas
+        precauções e tratamentos específicos. Aqui estão algumns tratamentos e
+        explicações para ajudar a lidar com algumas dermatites capilares e
+        cuidados com os cabelos.
+      </p>
+
       <div
         className="tratamentosContainer"
         style={{
@@ -223,8 +231,12 @@ export default function SaudePage() {
             "A lista de doenças do couro cabeludo engloba a pitiríase, uma micose de origem fúngica. Chamada também de tínea capilar, esse tipo de infecção causa coceira e descamação, além de queda temporária do cabelo, em alguns casos. Os fungos causadores da pitiríase compõem a microbiota do couro cabeludo e são ativados devido a mudanças no pH da região, à sudorese em excesso e até mesmo ao estresse, entre outras razões.",
           ]}
         />
-
       </div>
+
+      <p className="saudeTextUp mg-top">
+        Lembrando que essas são apenas algumas dicas gerais, e é importante consultar um dermatologista para um tratamento adequado e individualizado para a sua condição de dermatite no couro cabeludo.
+      </p>
+
     </main>
   );
 }
