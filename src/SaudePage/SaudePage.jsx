@@ -226,7 +226,7 @@ export default function SaudePage() {
           title={"Pitiríase"}
           shVar={shPitiriase}
           shFunction={setShPitiriase}
-          imageDerma={"./img/pitiriase.jpg"}
+          imageDerma={"./img/pitiriase2.jpg"}
           description={[
             "A lista de doenças do couro cabeludo engloba a pitiríase, uma micose de origem fúngica. Chamada também de tínea capilar, esse tipo de infecção causa coceira e descamação, além de queda temporária do cabelo, em alguns casos. Os fungos causadores da pitiríase compõem a microbiota do couro cabeludo e são ativados devido a mudanças no pH da região, à sudorese em excesso e até mesmo ao estresse, entre outras razões.",
           ]}
