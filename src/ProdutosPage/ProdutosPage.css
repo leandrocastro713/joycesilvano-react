@@ -10,19 +10,20 @@
   height: 100%;
 }
 .produto_card {
+  border-bottom: 1px dotted gray;
   color: rgb(41, 22, 40);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: .5rem 0;
   padding: 7px;
   position: relative;
   width: 100%;
   max-width: 456px;
 }
-.produto_card:last-child{
-  border:none;
-}
 .produto_card a {
+  display:block;
+  margin: auto 0;
   text-decoration: none;
   color: rgb(41, 22, 40);
 }
