@@ -67,11 +67,20 @@ export default function GaleriaPage() {
   }
   return (
     <>
-      {showModal && 
-        <div style={showModal?{opacity: 1}:{opacity:0}} className="modal" id = 'imodalContent' >
-          <div className="modalContent" 
+      {/* {showModal &&  */}
+        <div 
+          style={
+            {opacity: showModal? '1' : '0', 
+            zIndex: showModal? '100' : '0'}
+            } 
+            className="modal" id = 'imodalContent' >
+          <div 
+            className="modalContent" 
             onClick={(e)=>modalOff(e)}>
-            <img
+            <img 
+              style={
+                {scale: showModal? '1' : '.4'}
+              }
               src={arqModal}
               alt=""
               id="modalImg" onClick={(e)=>modalOff(e)}
@@ -79,7 +88,7 @@ export default function GaleriaPage() {
           </div>
           <span id="btClose" onClick={()=>setShowModal(false)}>&times;</span>
         </div>
-      }
+      {/* } */}
       <main className="grid">
         <aside className="side">
           <a id="linkCortes" onClick={() => tabClick("cortes")} href="#">
