@@ -5,6 +5,9 @@
   margin: 0 auto;
   margin-top: .5rem;
 }
+.produtos_container h3{
+  margin: 1rem;
+}
 .side {
   display: flex;
   flex-direction: column;
@@ -163,14 +166,18 @@
 @media (max-width: 800px) {
   .grid {
     width: 680px;
-  }
+  }  
+
 }
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
     width: 480px;
   }
-  .side a {
+  .produtos_container h3{
+    margin: .5rem;
+  }
+.side a {
     text-align: center;
   }
 }

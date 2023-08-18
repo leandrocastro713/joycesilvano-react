@@ -9,7 +9,7 @@ export default function ProdutosPage() {
       <div className="produtos_container">
         <h3>Mais informações sobre os produtos, clique no ícone do Whattsapp.</h3>
         <ProdutoDesc
-          xref={"../produtos/apse01.jpeg"}
+          xref={"../produtos/apse01.jpg"}
           title={"Apse Mousse Nutritivo"}
           tags={["ANTIFRIZ", "DEFINIÇÃO", "PROTEÇÃO TÉRMICA", "VOLUME"]}
           text={
@@ -18,7 +18,7 @@ export default function ProdutosPage() {
         />
 
         <ProdutoDesc
-          xref={"../produtos/apse02.jpeg"}
+          xref={"../produtos/apse02.jpg"}
           title={"Apse Gelatina Ativadora"}
           tags={["ANTIFRIZ", "DEFINIÇÃO", "FIXAÇÃO", "DAYAFTER"]}
           text={
@@ -27,7 +27,7 @@ export default function ProdutosPage() {
         />
 
         <ProdutoDesc
-          xref={"../produtos/apse03.jpeg"}
+          xref={"../produtos/apse03.jpg"}
           title={"Apse Ativador e Modelador"}
           tags={["ANTIFRIZ", "DEFINIÇÃO", "FIXAÇÃO", "BRILHO"]}
           text={
