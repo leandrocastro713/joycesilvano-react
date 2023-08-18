@@ -14,7 +14,14 @@ p {
   font-weight: 500;
 }
 #hoje {
-  margin: 2rem 2rem 0;
+  padding: 10px 25px;
+  background-color: rgb(242, 211, 237);
+  background-blend-mode: luminosity;
+  border-radius: 14px;
+  max-width: 500px;
+  margin: 2rem auto 0;
+  box-shadow: 4px 4px 15px gray, inset -2px -2px 15px pink;
+  text-shadow: 1px 1px 3px gray;
 }
 .corpensem {
   height: 220px;
@@ -178,13 +185,12 @@ hr {
 }
 
 @media (max-width: 600px) {
-  .tempo1 {
-    display: block;
+  #hoje{
+    width:90%;
   }
-  .tempo2 {
-    display: none;
-  }
-  .artigo a {
+
+
+.artigo a {
     width: 200px;
   }
   .coluna-esquerda {

@@ -129,43 +129,43 @@ export default function InicioPage() {
             <h2>Corte e Penteado da Semana</h2> <br />
             <div className="subartigo2">
               <a
-                href="./galeria/cortes/foto093.jpeg"
+                href="./galeria/cortes/foto093.jpg"
                 target="_blank"
               >
                 <img
                   className="corpensem"
-                  src="./galeria/cortes/foto093.jpeg"
+                  src="./galeria/cortes/foto093.jpg"
                   alt="corte da Semana"
                 />
                 <br />
               </a>
               <a
-                href="./galeria/cortes/foto094.jpeg"
+                href="./galeria/cortes/foto094.jpg"
                 target="_blank"
               >
                 <img
                   className="corpensem"
-                  src="./galeria/cortes/foto094.jpeg"
+                  src="./galeria/cortes/foto094.jpg"
                   alt="corte da Semana"
                 />
               </a>
               <a
-                href="./galeria/cortes/foto095.jpeg"
+                href="./galeria/cortes/foto095.jpg"
                 target="_blank"
               >
                 <img
                   className="corpensem"
-                  src="./galeria/cortes/foto095.jpeg"
+                  src="./galeria/cortes/foto095.jpg"
                   alt="corte da Semana"
                 />
               </a>
               <a
-                href="./galeria/cortes/foto099.jpeg"
+                href="./galeria/cortes/foto099.jpg"
                 target="_blank"
               >
                 <img
                   className="corpensem"
-                  src="./galeria/cortes/foto099.jpeg"
+                  src="./galeria/cortes/foto099.jpg"
                   alt="corte da Semana"
                 />
               </a>

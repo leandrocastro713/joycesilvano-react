@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./ProdutosPage.css";
 import ProdutoDesc from "./ProdutoDesc";
 
