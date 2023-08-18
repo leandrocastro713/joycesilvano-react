@@ -1,5 +1,7 @@
+import { waitFor } from "@testing-library/react";
 import "./GaleriaPage.css";
 import { useState, useRef } from "react";
+import { wait } from "@testing-library/user-event/dist/utils";
 
 export default function GaleriaPage() {
   const [showCortes, setShowCortes] = useState(true);
@@ -19,10 +21,10 @@ export default function GaleriaPage() {
   // ----------------- fotos 1 até 94 --- IMAGENS DOS CORTES
   for (let i = 99; i >= 1; i--) {
     if (i < 10) {
-      tempArq = "../galeria/cortes/foto00" + i + ".jpeg";
+      tempArq = "../galeria/cortes/thumbs/foto00" + i + ".jpg";
     }
     if (i >= 10 && i <= 99) {
-      tempArq = "../galeria/cortes/foto0" + i + ".jpeg";
+      tempArq = "../galeria/cortes/thumbs/foto0" + i + ".jpg";
     }
     arqsCortes = [...arqsCortes, tempArq]
   }
@@ -31,7 +33,7 @@ export default function GaleriaPage() {
   var arqsPenteados = []
   // // ---------- fotos 201 até 230 ---- IMAGENS DOS PENTEADOS
   for (let i = 230; i >= 201; i--) {
-    tempArq = "../galeria/penteados/foto" + i + ".jpeg";
+    tempArq = "../galeria/penteados/thumbs/foto" + i + ".jpg";
     arqsPenteados = [...arqsPenteados, tempArq]
   }
   // console.log(arqsPenteados)
@@ -40,15 +42,16 @@ export default function GaleriaPage() {
   // // ---------- fotos 301 até 330 ---- IMAGENS DOS ANTES E DEPOIS
   for (let i = 363; i >= 302; i-=2) {
     console.log(i)
-    tempArq = "../galeria/antesdepois/foto" + i + ".jpeg";
+    tempArq = "../galeria/antesdepois/thumbs/foto" + i + ".jpg";
     arqsAntesdepois = [...arqsAntesdepois, tempArq]
-    tempArq = "../galeria/antesdepois/foto" + (i+1) + ".jpeg";
+    tempArq = "../galeria/antesdepois/thumbs/foto" + (i+1) + ".jpg";
     arqsAntesdepois = [...arqsAntesdepois, tempArq]
   }
 
   function toModal(arq){
-    setShowModal(true)
-    setarqModal(arq)
+     setarqModal(arq)
+     setShowModal(true)
+   
     console.log('toModal ' + arq)
   }
 
@@ -62,6 +65,7 @@ export default function GaleriaPage() {
   }
 
   function modalOff(e){
+    setarqModal('')
     console.log (e)
     setShowModal(false)
   }
@@ -77,11 +81,12 @@ export default function GaleriaPage() {
           <div 
             className="modalContent" 
             onClick={(e)=>modalOff(e)}>
+            
             <img 
-              style={
-                {scale: showModal? '1' : '.4'}
-              }
               src={arqModal}
+              style={
+                {scale: showModal? '1' : '.2'}
+              }
               alt=""
               id="modalImg" onClick={(e)=>modalOff(e)}
             />
@@ -117,7 +122,7 @@ export default function GaleriaPage() {
           {showCortes && (
             <div className="cortes">
               { arqsCortes.map((arq)=>( 
-                <img src={arq} className="imagem" onClick={()=>toModal(arq)}/>
+                <img src={arq} className="imagem" onClick={()=>toModal(arq.replace('/thumbs','').replace('.jpg','.jpeg'))}/>
               ))}
             </div>
           )}
@@ -125,7 +130,7 @@ export default function GaleriaPage() {
           {showPenteados && (
             <div className="penteados">
               { arqsPenteados.map((arq)=>( 
-                <img src={arq} className="imagem" onClick={()=>toModal(arq)}/>
+                <img src={arq} className="imagem" onClick={()=>toModal(arq.replace('/thumbs','').replace('.jpg','.jpeg'))}/>
               ))}
 
             </div>
@@ -136,10 +141,10 @@ export default function GaleriaPage() {
               { arqsAntesdepois.map((arq, idx)=>(
                 (idx%2==0)?
                   <p style={{"display":"inlineBlock"}}>Antes
-                    <img src={arq} className="imagem" onClick={()=>toModal(arq)}/></p>
+                    <img src={arq} className="imagem" onClick={()=>toModal(arq.replace('/thumbs','').replace('.jpg','.jpeg'))}/></p>
                     :
                     <p>
-                      <img src={arq} className="imagem" onClick={()=>toModal(arq)}/> Depois 
+                      <img src={arq} className="imagem" onClick={()=>toModal(arq.replace('/thumbs','').replace('.jpg','.jpeg'))}/> Depois 
                     </p> 
               ))} 
             </div>

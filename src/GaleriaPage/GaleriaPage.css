@@ -102,7 +102,7 @@
   transition: all 500ms ease;
 }
 .modal {
-  transition: ease all 500ms;
+  transition: ease all 200ms;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
@@ -116,7 +116,7 @@
   z-index: 3;
 }
 .modalContent {
-  transition: ease-in-out opacity 500ms;
+  transition: ease-in-out opacity 300ms;
   display: flex;
   position: relative;
   width: 100%;
