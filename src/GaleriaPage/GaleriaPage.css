@@ -1,18 +1,20 @@
 .grid {
   display: grid;
-  grid-template-rows: 180px 1fr;
+  grid-template-rows: 220px 1fr;
   width: 800px;
   margin: 0 auto;
   margin-top: .5rem;
+  position:relative;
 }
 .produtos_container h3{
   margin: 1rem;
 }
 .side {
-  display: flex;
+  display: block;
   flex-direction: column;
-  margin-right: 1rem;
-  padding: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  position:relative;
   justify-content: center;
 }
 .hide {
@@ -24,16 +26,22 @@
   display: none;
 }
 .side a {
-  position: relative;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 8px gray;
+  border-radius: 20px;
+  background-color: rgba(240, 248, 255, 0.285);
+  color: rgb(29, 28, 28);
+  cursor: pointer;
   display: block;
-  text-decoration: none;
-  /* font-family: fonteH4; */
   font-size: large;
   font-weight: bolder;
-  color: black;
-  width: 100%;
-  padding: 10px 10px 0;
+  position: relative;
+  margin:0 auto;
+  padding: 10px 10px;
+  max-width: 300px;
+  text-decoration: none;
   text-align: center;
+  width: 100%;
 }
 .container {
   display: block;

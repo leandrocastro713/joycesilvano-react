@@ -18,7 +18,7 @@ export default function SaudePage() {
 
   return (
     <main className="saude_container">
-      <h2>Tratamentos e Dermatites</h2> <br />
+      <h2 class='title1'>Tratamentos e Dermatites</h2> <br />
       <p className="saudeTextUp">
         Para cuidar do couro cabeludo, é importante seguir algumas
         precauções e tratamentos específicos. Aqui estão algumns tratamentos e

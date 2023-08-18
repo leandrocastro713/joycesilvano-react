@@ -10,7 +10,8 @@
   position:relative;
   margin:auto 6px;
   display:flex;
-}.saude_container {
+}
+.saude_container {
   align-items: center;
   color: rgb(8, 35, 35);
   display: flex;
@@ -21,6 +22,10 @@
   overflow: hidden;
   padding-top: 1.5rem;
   position: relative;
+}
+.saude_container .title1{
+  text-shadow: 2px 2px 4px gray;
+  text-decoration: underline;
 }
 .saudeTextUp{
   width:90%;
