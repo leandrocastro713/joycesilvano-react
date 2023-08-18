@@ -21,10 +21,10 @@ export default function GaleriaPage() {
   // ----------------- fotos 1 até 94 --- IMAGENS DOS CORTES
   for (let i = 99; i >= 1; i--) {
     if (i < 10) {
-      tempArq = "../galeria/cortes/thumbs/foto00" + i + ".jpg";
+      tempArq = "../galeria/cortes/foto00" + i + ".jpg";
     }
     if (i >= 10 && i <= 99) {
-      tempArq = "../galeria/cortes/thumbs/foto0" + i + ".jpg";
+      tempArq = "../galeria/cortes/foto0" + i + ".jpg";
     }
     arqsCortes = [...arqsCortes, tempArq]
   }
@@ -33,7 +33,7 @@ export default function GaleriaPage() {
   var arqsPenteados = []
   // // ---------- fotos 201 até 230 ---- IMAGENS DOS PENTEADOS
   for (let i = 230; i >= 201; i--) {
-    tempArq = "../galeria/penteados/thumbs/foto" + i + ".jpg";
+    tempArq = "../galeria/penteados/foto" + i + ".jpg";
     arqsPenteados = [...arqsPenteados, tempArq]
   }
   // console.log(arqsPenteados)
@@ -42,9 +42,9 @@ export default function GaleriaPage() {
   // // ---------- fotos 301 até 330 ---- IMAGENS DOS ANTES E DEPOIS
   for (let i = 363; i >= 302; i-=2) {
     console.log(i)
-    tempArq = "../galeria/antesdepois/thumbs/foto" + i + ".jpg";
+    tempArq = "../galeria/antesdepois/foto" + i + ".jpg";
     arqsAntesdepois = [...arqsAntesdepois, tempArq]
-    tempArq = "../galeria/antesdepois/thumbs/foto" + (i+1) + ".jpg";
+    tempArq = "../galeria/antesdepois/foto" + (i+1) + ".jpg";
     arqsAntesdepois = [...arqsAntesdepois, tempArq]
   }
 
@@ -59,41 +59,43 @@ export default function GaleriaPage() {
     setShowCortes(false)
     setShowPenteados(false)
     setShowAntesDepois(false)
+    setShowLoading(true)
     if(tab == 'cortes'){ setShowCortes(true)  }
     if(tab == 'penteados'){ setShowPenteados(true)  }
     if(tab == 'antesdepois'){ setShowAntesDepois(true)  }
   }
 
   function modalOff(e){
-    setarqModal('')
     console.log (e)
     setShowModal(false)
   }
   return (
     <>
-      {/* {showModal &&  */}
+    
+      {/* -------------------------------- MODAL  */}
+      <div 
+        style={
+          {opacity: showModal? '1' : '0', 
+          zIndex: showModal? '100' : '0'}
+          } 
+          className="modal" id = 'imodalContent' >
         <div 
-          style={
-            {opacity: showModal? '1' : '0', 
-            zIndex: showModal? '100' : '0'}
-            } 
-            className="modal" id = 'imodalContent' >
-          <div 
-            className="modalContent" 
-            onClick={(e)=>modalOff(e)}>
-            
-            <img 
-              src={arqModal}
-              style={
-                {scale: showModal? '1' : '.2'}
-              }
-              alt=""
-              id="modalImg" onClick={(e)=>modalOff(e)}
-            />
-          </div>
-          <span id="btClose" onClick={()=>setShowModal(false)}>&times;</span>
+          className="modalContent" 
+          onClick={(e)=>modalOff(e)}>
+         
+          <img 
+            src={arqModal}
+            style={
+              {opacity: showModal? '1' : '0',
+               scale: showModal? '1' : '.2'}
+            }
+            alt=""
+            id="modalImg" onClick={(e)=>modalOff(e)}
+          />
         </div>
-      {/* } */}
+        <span id="btClose" onClick={()=>setShowModal(false)}>&times;</span>
+      </div>
+{/* ------------------------------------------- SELETORES  */}
       <main className="grid">
         <aside className="side">
           <a id="linkCortes" onClick={() => tabClick("cortes")} href="#">
@@ -110,27 +112,25 @@ export default function GaleriaPage() {
         </aside>
 
         <div className="conteiner">
-          {showLoading && <div className="loading">
-            <img
-              className="loadingGif"
-              src='./img/loading.gif'
-              alt=""
-            />
-            <p>Carregando imagens ...</p>
-          </div>}
-
-          {showCortes && (
-            <div className="cortes">
-              { arqsCortes.map((arq)=>( 
-                <img src={arq} className="imagem" onClick={()=>toModal(arq.replace('/thumbs','').replace('.jpg','.jpeg'))}/>
-              ))}
-            </div>
-          )}
+          {/*----------------------------------- GUIAS  */}
+          <div
+            className="cortes"
+            style = {{
+              display:showCortes?'flex':'none',
+              opacity: showCortes?'1':'0', 
+              visibility: showCortes?'visible':'collapse', 
+              scale: showCortes?'1':'0'
+            }}>
+            { arqsCortes.map((arq)=>( 
+              <img src={arq} className="imagem" onClick={()=>toModal(arq)}/>
+            ))}
+          </div>
 
           {showPenteados && (
-            <div className="penteados">
+            <div 
+              className="penteados">
               { arqsPenteados.map((arq)=>( 
-                <img src={arq} className="imagem" onClick={()=>toModal(arq.replace('/thumbs','').replace('.jpg','.jpeg'))}/>
+                <img src={arq} className="imagem" onClick={()=>toModal(arq)}/>
               ))}
 
             </div>
@@ -141,10 +141,10 @@ export default function GaleriaPage() {
               { arqsAntesdepois.map((arq, idx)=>(
                 (idx%2==0)?
                   <p style={{"display":"inlineBlock"}}>Antes
-                    <img src={arq} className="imagem" onClick={()=>toModal(arq.replace('/thumbs','').replace('.jpg','.jpeg'))}/></p>
+                    <img src={arq} className="imagem" onClick={()=>toModal(arq)}/></p>
                     :
                     <p>
-                      <img src={arq} className="imagem" onClick={()=>toModal(arq.replace('/thumbs','').replace('.jpg','.jpeg'))}/> Depois 
+                      <img src={arq} className="imagem" onClick={()=>toModal(arq)}/> Depois 
                     </p> 
               ))} 
             </div>

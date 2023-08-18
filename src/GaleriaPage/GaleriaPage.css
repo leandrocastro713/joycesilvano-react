@@ -55,13 +55,14 @@
 .cortes,
 .antesdepois,
 .penteados {
-  transition: all 500ms;
+  transition: all 500ms ease;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   border: 1px dotted gray;
   border-radius: 5px;
   padding: 5px;
+  display:flex;
   max-width: 1200px;
   min-width: 300px;
   margin: 0 auto;
