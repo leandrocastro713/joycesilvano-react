@@ -26,19 +26,17 @@ export default function GaleriaPage() {
     }
     arqsCortes = [...arqsCortes, tempArq];
   }
-  // console.log(arqsCortes)
 
   var arqsPenteados = [];
   // // ---------- fotos 201 até 230 ---- IMAGENS DOS PENTEADOS
-  for (let i = 230; i >= 201; i--) {
+  for (let i = 232; i >= 201; i--) {
     tempArq = "../galeria/penteados/foto" + i + ".jpg";
     arqsPenteados = [...arqsPenteados, tempArq];
   }
-  // console.log(arqsPenteados)
 
   var arqsAntesdepois = [];
   // // ---------- fotos 301 até 330 ---- IMAGENS DOS ANTES E DEPOIS
-  for (let i = 363; i >= 302; i -= 2) {
+  for (let i = 373; i >= 302; i -= 2) {
     tempArq = "../galeria/antesdepois/foto" + i + ".jpg";
     arqsAntesdepois = [...arqsAntesdepois, tempArq];
     tempArq = "../galeria/antesdepois/foto" + (i + 1) + ".jpg";
@@ -72,13 +70,12 @@ export default function GaleriaPage() {
     setShowModal(false);
   }
   return (
-    <div 
-      onLoad={()=>setShowLoading(false)}>
+    <div>
       {/* -------------------------------- MODAL  */}
       <div
         style={{
           opacity: showModal ? "1" : "0",
-          zIndex: showModal ? "100" : "0",
+          zIndex: showModal ? "100" : "-100",
         }}
         className="modal"
         id="imodalContent"
@@ -87,6 +84,7 @@ export default function GaleriaPage() {
           <img
             src={arqModal}
             style={{
+              zIndex: showModal ? '100' : '-1000',
               opacity: showModal ? "1" : "0",
               scale: showModal ? "1" : ".2",
             }}
@@ -101,7 +99,10 @@ export default function GaleriaPage() {
       </div>
 
       {/* ------------------------------------------- SELETORES  */}
-      <main className="grid">
+      <main 
+        className="grid"
+        onLoad={() => setShowLoading(false)}
+        >
         <aside className="side">
           <a id="linkCortes" onClick={() => tabClick("cortes")} href="#">
             Cortes e Tratamentos
@@ -123,30 +124,28 @@ export default function GaleriaPage() {
         {/* -------------------------------- loading  */}
         {showLoading && (
           <div className="loading">
+            <p>Carregando fotos ...</p>
             <img src="./img/loading.gif" alt="" className="loadingGif" />
           </div>
         )}
 
         <div className="conteiner">
-          {/*----------------------------------- GUIAS  */}
-          <div
-            onLoad={()=>setShowLoading(false)}
-            className="cortes"
-            style={{
-              display: showCortes ? "flex" : "none",
-              opacity: showCortes ? "1" : "0",
-              visibility: showCortes ? "visible" : "collapse",
-              scale: showCortes ? "1" : "0",
-            }}
-          >
-            {arqsCortes.map((arq) => (
-              <img src={arq} className="imagem" onClick={() => toModal(arq)} />
-            ))}
-          </div>
+          {/*----------------------------------- DIVs  */}
+
+          {showCortes && (
+            <div className="cortes">
+              {arqsCortes.map((arq) => (
+                <img
+                  src={arq}
+                  className="imagem"
+                  onClick={() => toModal(arq)}
+                />
+              ))}
+            </div>
+          )}
 
           {showPenteados && (
-            <div className="penteados"
-              onLoad={()=>setShowLoading(false)}>
+            <div className="penteados">
               {arqsPenteados.map((arq) => (
                 <img
                   src={arq}
@@ -158,9 +157,7 @@ export default function GaleriaPage() {
           )}
 
           {showAntesDepois && (
-            <div 
-              onLoad={()=>setShowLoading(false)}
-              className="antesdepois">
+            <div className="antesdepois">
               {arqsAntesdepois.map((arq, idx) =>
                 idx % 2 == 0 ? (
                   <p style={{ display: "inlineBlock" }}>

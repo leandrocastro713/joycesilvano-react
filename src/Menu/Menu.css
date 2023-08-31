@@ -11,7 +11,7 @@
   padding: 10px 30px;
   text-align: center;
   color: rgb(212, 168, 211);
-  z-index: 1000;
+  z-index: 2000;
   transition: all ease 200ms;
 }
 #barra-de-menu ul {
