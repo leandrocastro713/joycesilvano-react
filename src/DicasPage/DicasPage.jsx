@@ -25,7 +25,8 @@ export default function DicasPage() {
         }
       />
       <DicasItem
-        title={"Day After"}
+        title={"Day After e Revitalização"}
+        video={"https://www.youtube.com/watch?v=zo35bz6RbvE"}
         description={
           "Sabe quando você acorda e sua finalização não está do seu agrado? Você pode revitalizar seus cachos com um spray Day After. Separe o cabelo em mechas como se fosse finalizar, borrife o spray em cada mecha, enluve bem e amasse(se quiser definição, faça a fitagem novamente) mas cuidado com o excesso de produto."
         }

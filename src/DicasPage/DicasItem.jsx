@@ -5,7 +5,7 @@ export default function DicasItem({ title, description, video }) {
     <div className="dica">
       <h2>{title}</h2>
       {video && (
-        <ReactPlayer className="video_durinho" width="100%" url={video} />
+        <ReactPlayer height= '470px' className="video_durinho" width="100%" url={video} />
       )}
       <p>{description}</p>
     </div>
