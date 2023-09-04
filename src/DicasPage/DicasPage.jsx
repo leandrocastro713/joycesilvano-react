@@ -7,6 +7,7 @@ export default function DicasPage() {
     <main>
       <DicasItem
         title={"Shampoo + Co Wash"}
+        video={"https://www.youtube.com/watch?v=-GrU2YpH2II"}
         description={
           "Para quem higieniza os cabelos todos os dias, deve-se intercalar o shampoo com o co wash!"
         }
