@@ -160,12 +160,12 @@ export default function InicioPage() {
                 />
               </a>
               <a
-                href="./galeria/cortes/foto231.jpg"
+                href="./galeria/penteados/foto231.jpg"
                 target="_blank"
               >
                 <img
                   className="corpensem"
-                  src="./galeria/cortes/foto231.jpg"
+                  src="./galeria/penteados/foto231.jpg"
                   alt="corte da Semana"
                 />
               </a>
