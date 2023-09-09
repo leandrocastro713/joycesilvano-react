@@ -79,10 +79,7 @@ export default function InicioPage() {
             <h2>Joyce Silvano</h2>
 
             <div className="subartigo">
-              <a
-                href="./img/joyce-agenda-aberta.jpg"
-                target="_blank"
-              >
+              <a href="./img/joyce-agenda-aberta.jpg" target="_blank">
                 <img
                   className="joyce-card"
                   src="./img/joyce-agenda-aberta.jpg"
@@ -111,10 +108,7 @@ export default function InicioPage() {
               Confira na tabela abaixo, a curvatura do fio do seu cabelo.
             </p>
             <div className="subartigo">
-              <a
-                href="./img/mapa-curvatura.jpg"
-                target="_blank"
-              >
+              <a href="./img/mapa-curvatura.jpg" target="_blank">
                 <img
                   className="imagem1"
                   src="./img/mapa-curvatura.png"
@@ -128,10 +122,7 @@ export default function InicioPage() {
           <div className="artigo">
             <h2>Corte e Penteado da Semana</h2> <br />
             <div className="subartigo2">
-              <a
-                href="./galeria/cortes/foto086.jpg"
-                target="_blank"
-              >
+              <a href="./galeria/cortes/foto086.jpg" target="_blank">
                 <img
                   className="corpensem"
                   src="./galeria/cortes/foto086.jpg"
@@ -139,30 +130,21 @@ export default function InicioPage() {
                 />
                 <br />
               </a>
-              <a
-                href="./galeria/cortes/foto087.jpg"
-                target="_blank"
-              >
+              <a href="./galeria/cortes/foto087.jpg" target="_blank">
                 <img
                   className="corpensem"
                   src="./galeria/cortes/foto087.jpg"
                   alt="corte da Semana"
                 />
               </a>
-              <a
-                href="./galeria/cortes/foto092.jpg"
-                target="_blank"
-              >
+              <a href="./galeria/cortes/foto092.jpg" target="_blank">
                 <img
                   className="corpensem"
                   src="./galeria/cortes/foto092.jpg"
                   alt="corte da Semana"
                 />
               </a>
-              <a
-                href="./galeria/penteados/foto231.jpg"
-                target="_blank"
-              >
+              <a href="./galeria/penteados/foto231.jpg" target="_blank">
                 <img
                   className="corpensem"
                   src="./galeria/penteados/foto231.jpg"
@@ -192,11 +174,11 @@ export default function InicioPage() {
               Você percebeu que a higienização é somente no couro cabeludo!
             </p>
             <br />
-            <ReactPlayer
-              className="video-higi"
-              width="95%"
-              url="https://www.youtube.com/shorts/8IIHEjunDKI"
-            />
+              <ReactPlayer
+                className="video-higi"
+                width="95%"
+                url="https://www.youtube.com/shorts/8IIHEjunDKI"
+              />
             <br />
           </div>
         </section>
@@ -204,14 +186,15 @@ export default function InicioPage() {
         {/* <!-------------------------------- coluna direita --> */}
 
         <section className="coluna-direita">
-
           <div className="artigo">
             <h2> Avisos</h2>
-            <ImageLink link="./img/promoções.jpg"  />
-
-            <ImageLink link="./img/promoções-higienização.jpg" />
+            <ReactPlayer
+              className="video-higi"
+              width="95%"
+              height="600px"
+              url="https://www.youtube.com/shorts/ohaWHWxDTrM"
+            />
           </div>
-
         </section>
       </div>
 
