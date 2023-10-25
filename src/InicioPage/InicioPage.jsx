@@ -188,11 +188,11 @@ export default function InicioPage() {
         <section className="coluna-direita">
           <div className="artigo">
             <h2> Avisos</h2>
-            <ReactPlayer
-              className="video-higi"
-              width="95%"
-              height="600px"
-              url="https://www.youtube.com/shorts/ohaWHWxDTrM"
+            <img
+              height='450px'
+              className="corpensem"
+              src="./img/promo-aguardem.jpg"
+              alt="promoções"
             />
           </div>
         </section>
