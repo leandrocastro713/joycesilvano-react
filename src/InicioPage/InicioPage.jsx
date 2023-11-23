@@ -188,12 +188,11 @@ export default function InicioPage() {
         <section className="coluna-direita">
           <div className="artigo">
             <h2> Avisos</h2>
-            <img
-              height='450px'
-              className="corpensem"
-              src="./img/promo-aguardem.jpg"
-              alt="promoções"
-            />
+            <h3 id='promoH3'>Ta rolando rifa de serviços. Confere no link abaixo.</h3>
+            <a href="https://joycesilvano-rifa.vercel.app/" target="_blank">
+              <img id = 'promoImg' src=".\img\rifaR.jpg" alt="" />
+              <h3>https://joycesilvano-rifa.vercel.app</h3> 
+            </a>
           </div>
         </section>
       </div>
