@@ -201,6 +201,7 @@ export default function InicioPage() {
           <ReactPlayer
             className="video-higi"
             width="95%"
+            height='500px'
             url="https://www.youtube.com/shorts/wvkTHbd1hjA"
           />
           <p>Promoção de Corte + Tratamento por R$ 100,00</p>
@@ -208,6 +209,7 @@ export default function InicioPage() {
           <ReactPlayer
             className="video-higi"
             width="95%"
+            height='500px'
             url="https://www.youtube.com/shorts/NXAe8CMaiFY"
           />
           <p>Promoção de Shampoo + Condicionador por R$ 100,00</p>
