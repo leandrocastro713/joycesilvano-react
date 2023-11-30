@@ -197,18 +197,21 @@ export default function InicioPage() {
             </a>
           </div>
           <br />
-          <h3>Semana Black Friday</h3>
+          <h2>Semana Black Friday</h2>
           <ReactPlayer
             className="video-higi"
             width="95%"
             url="https://www.youtube.com/shorts/wvkTHbd1hjA"
           />
+          <p>Promoção de Corte + Tratamento por R$ 100,00</p>
           <br />
           <ReactPlayer
             className="video-higi"
             width="95%"
             url="https://www.youtube.com/shorts/NXAe8CMaiFY"
           />
+          <p>Promoção de Shampoo + Condicionador por R$ 100,00</p>
+          <br />
         </section>
       </div>
 
