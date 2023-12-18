@@ -196,15 +196,15 @@ export default function InicioPage() {
               <h3 class="promoH3">https://joycesilvano-rifa.vercel.app</h3>
             </a>
           </div>
-          {/*<br />
-           <h2>Semana Black Friday</h2>
+          <br />
+           <h2>Promoção de Natal</h2>
           <ReactPlayer
             className="video-higi"
             width="95%"
             height='500px'
-            url="https://www.youtube.com/shorts/wvkTHbd1hjA"
+            url="https://www.youtube.com/shorts/nqe1TeQtsS0"
           />
-          <p>Promoção de Corte + Tratamento por R$ 100,00</p>
+          {/* <p>Promoção de Corte + Tratamento por R$ 100,00</p>
           <br />
           <ReactPlayer
             className="video-higi"
