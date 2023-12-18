@@ -186,7 +186,7 @@ export default function InicioPage() {
         {/* <!-------------------------------- coluna direita --> */}
 
         <section className="coluna-direita">
-          <div className="artigo">
+          {/* <div className="artigo">
             <h2> Avisos</h2>
             <h3 class="promoH3">
               Ta rolando rifa de serviços. Confere no link abaixo.
@@ -195,7 +195,7 @@ export default function InicioPage() {
               <img id="promoImg" src=".\img\rifaR.jpg" alt="" />
               <h3 class="promoH3">https://joycesilvano-rifa.vercel.app</h3>
             </a>
-          </div>
+          </div> */}
           <br />
            <h2>Promoção de Natal</h2>
           <ReactPlayer
