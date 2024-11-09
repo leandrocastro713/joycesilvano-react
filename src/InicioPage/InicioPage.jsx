@@ -186,34 +186,11 @@ export default function InicioPage() {
         {/* <!-------------------------------- coluna direita --> */}
 
         <section className="coluna-direita">
-          {/* <div className="artigo">
-            <h2> Avisos</h2>
-            <h3 class="promoH3">
-              Ta rolando rifa de serviços. Confere no link abaixo.
-            </h3>
-            <a href="https://joycesilvano-rifa.vercel.app/" target="_blank">
-              <img id="promoImg" src=".\img\rifaR.jpg" alt="" />
-              <h3 class="promoH3">https://joycesilvano-rifa.vercel.app</h3>
-            </a>
-          </div> */}
+          
           <br />
-           <h2>Promoção de Natal</h2>
-          <ReactPlayer
-            className="video-higi"
-            width="95%"
-            height='500px'
-            url="https://www.youtube.com/shorts/nqe1TeQtsS0"
-          />
-          {/* <p>Promoção de Corte + Tratamento por R$ 100,00</p>
-          <br />
-          <ReactPlayer
-            className="video-higi"
-            width="95%"
-            height='500px'
-            url="https://www.youtube.com/shorts/NXAe8CMaiFY"
-          />
-          <p>Promoção de Shampoo + Condicionador por R$ 100,00</p>
-          <br /> */}
+          <h3>Aguardem ...</h3> <br />
+          <h4>Promoções em breve</h4> <br />
+          
         </section>
       </div>
 
